@@ -1,0 +1,17 @@
+{
+  "name": "Sunspots",
+  "description": "Sunspot Zoo",
+  "author": "Zooniverse <support@zooniverse.org>",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "haw serve"
+  },
+  "dependencies": {
+    "haw": "~0.2.4",
+    "zooniverse": "git://github.com/zooniverse/Zooniverse.git#no-deps",
+    "zootorial": "~0.3.6",
+    "clean-css": "0.6.0",
+    "webmake-ember-handlebars": "~0.1.2",
+    "webmake-coffee": "~0.1.1"
+  }
+}
