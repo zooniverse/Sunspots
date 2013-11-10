@@ -9,3 +9,4 @@ zooniverse.topBar = new TopBar
 zooniverse.topBar.el.appendTo $('header')
 zooniverse.footer = new Footer
 zooniverse.footer.el.appendTo $('footer')
+zooniverse.util = $.extend zooniverse.util, require '../util'

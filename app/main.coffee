@@ -1,6 +1,12 @@
 require './lib/setup/zooniverse'
 require './lib/setup/video'
-App = Ember.Application.create rootElement: '#app', LOG_TRANSITIONS: true, LOG_TRANSITIONS_INTERNAL: true
+window.App = Ember.Application.create
+  rootElement: '#app'
+  LOG_TRANSITIONS: true
+  LOG_TRANSITIONS_INTERNAL: true
+
+Ember.Handlebars.helper 'formatNumber', (number) ->
+  new Handlebars.SafeString zooniverse.util.formatNumber(number)
 
 require './templates/application'
 require './templates/index'
@@ -11,6 +17,9 @@ require './templates/team'
 require './templates/discuss'
 require './templates/blog'
 require './templates/profile'
+require './templates/stats'
+
+App.StatsView = require './views/stats'
 
 App.Router.map ->
   @resource 'classify'
