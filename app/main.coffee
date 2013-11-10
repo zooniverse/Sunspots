@@ -1,14 +1,5 @@
-User = require 'zooniverse/models/user'
-Api = require 'zooniverse/lib/api'
-TopBar = require 'zooniverse/controllers/top-bar'
-Footer = require 'zooniverse/controllers/footer'
-
-zooniverse.api = new Api project: 'solar', host: 'http://localhost:3000'
-zooniverse.topBar = new TopBar
-zooniverse.topBar.el.appendTo $('header')
-zooniverse.footer = new Footer
-zooniverse.footer.el.appendTo $('footer')
-
+require './lib/setup/zooniverse'
+require './lib/setup/video'
 App = Ember.Application.create rootElement: '#app', LOG_TRANSITIONS: true, LOG_TRANSITIONS_INTERNAL: true
 
 require './templates/application'
@@ -29,11 +20,3 @@ App.Router.map ->
   @resource 'discuss'
   @resource 'blog'
   @resource 'profile'
-
-detectMobile = require './lib/detect_mobile'
-unless detectMobile()
-  $('.sun-video').append """
-    <source src="video/sun.ogv" type="video/ogg"></source>
-    <source src="video/sun.mp4" type="video/mp4"></source>
-    <source src="video/sun.webm" type="video/webm"></source>
-  """
