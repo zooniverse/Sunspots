@@ -3,6 +3,14 @@
   text-align: left
   
   .stat
+    @extend .col-md-3
+    @extend .col-sm-6
+    @extend .col-xs-12
+    
+    text-align: center
+    @media $media-min-desktop
+      text-align: left
+    
     .label
       title-font()
       color: $red

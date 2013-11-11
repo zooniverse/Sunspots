@@ -1,8 +1,10 @@
 nav
-  text-align: right
   line-height: 30px
   
   .logo
+    @extend .col-md-3
+    @extend .col-sm-12
+    @extend .col-xs-12
     condensed-font()
     float: left
     margin: 0
@@ -11,14 +13,27 @@ nav
     text-transform: uppercase
     letter-spacing: 1px
     
+    text-align: center
+    @media $media-min-desktop
+      text-align: left
+    
     a
       display: inline-block
+  
+  .links
+    @extend .col-md-9
+    @extend .col-sm-12
+    @extend .col-xs-12
+    
+    text-align: center
+    @media $media-min-desktop
+      text-align: right
   
   .nav-link
     transitioned()
     title-font(700)
     display: inline-block
-    margin: 0 8px
+    margin: 0 16px 0 0
     padding: 6px 12px
     font-size: 12px
     line-height: 12px
