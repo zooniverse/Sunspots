@@ -17,9 +17,12 @@ require './templates/team'
 require './templates/discuss'
 require './templates/blog'
 require './templates/profile'
-require './templates/stats'
+
+App.TeamMemberComponent = require './components/team_member'
+require './components/team-member'
 
 App.StatsView = require './views/stats'
+require './templates/stats'
 
 App.Router.map ->
   @resource 'classify'

@@ -1,0 +1,61 @@
+.team
+  section
+    &:last-child
+      padding-top: 45px
+    
+    clearfix()
+    padding-bottom: 20px
+    
+    h1
+      title-font(700)
+      margin: 5px 0
+      font-size: 20px
+      text-transform: uppercase
+      text-align: center
+      letter-spacing: 5px
+    
+    h3
+      title-font()
+      margin: 5px 0
+      font-size: 12px
+      text-align: center
+      letter-spacing: 1px
+    
+    hr
+      rule-above()
+    
+    .person
+      @extend .col-md-3
+      @extend .col-sm-6
+      @extend .col-xs-12
+      min-width: 170px
+      margin: 40px 0
+      padding: 0 10px
+      text-align: center
+      
+      .avatar
+        position: relative
+        display: inline-block
+        margin-bottom: 20px
+        border: 6px solid $white
+        border-radius(100%)
+        overflow: hidden
+        
+        img
+          vertical-align: top
+      
+      .name
+        title-font(700)
+        margin-bottom: 10px
+        font-size: 20px
+        line-height: 20px
+        text-transform: uppercase
+      
+      .title
+        margin-bottom: 20px
+        font-size: 14px
+        line-height: 14px
+        letter-spacing: 1px
+      
+      .description
+        font-size: 14px
