@@ -3,7 +3,6 @@ require './lib/setup/video'
 window.App = Ember.Application.create
   rootElement: '#app'
   LOG_TRANSITIONS: true
-  LOG_TRANSITIONS_INTERNAL: true
 
 Ember.Handlebars.helper 'formatNumber', (number) ->
   new Handlebars.SafeString zooniverse.util.formatNumber(number)
@@ -17,12 +16,16 @@ require './templates/team'
 require './templates/discuss'
 require './templates/blog'
 require './templates/profile'
+require './templates/tools'
 
 App.TeamMemberComponent = require './components/team_member'
 require './components/team-member'
 
 App.StatsView = require './views/stats'
 require './templates/stats'
+
+App.SubjectView = require './views/subject'
+require './templates/subject'
 
 App.Router.map ->
   @resource 'classify'
@@ -32,3 +35,10 @@ App.Router.map ->
   @resource 'discuss'
   @resource 'blog'
   @resource 'profile'
+
+App.ClassifyRoute = Ember.Route.extend
+  model: ->
+    zooniverse.SubjectQueue.fetch()
+  
+  setupController: (controller, pair) ->
+    controller.set 'model', pair

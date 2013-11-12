@@ -11,7 +11,7 @@
     "zooniverse": "git://github.com/zooniverse/Zooniverse.git#no-deps",
     "zootorial": "~0.3.6",
     "clean-css": "0.6.0",
-    "webmake-ember-handlebars": "~0.1.2",
+    "webmake-ember-handlebars": "~0.1.3",
     "webmake-coffee": "~0.1.1"
   }
 }
