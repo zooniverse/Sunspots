@@ -1,6 +1,5 @@
-<div class="image-container">
+<div class="image-container" {{action "choose" this}}>
   <img {{bindAttr src="image"}}>
-  <div class="overlay"></div>
 </div>
 
-<div class="choose-button">Choose</div>
+<div class="choose-button" {{action "choose" this}}>Choose</div>

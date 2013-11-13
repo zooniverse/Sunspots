@@ -16,7 +16,6 @@ require './templates/team'
 require './templates/discuss'
 require './templates/blog'
 require './templates/profile'
-require './templates/tools'
 
 App.TeamMemberComponent = require './components/team_member'
 require './components/team-member'
@@ -35,6 +34,8 @@ App.Router.map ->
   @resource 'discuss'
   @resource 'blog'
   @resource 'profile'
+
+App.ClassifyController = require './controllers/classify'
 
 App.ClassifyRoute = Ember.Route.extend
   model: ->

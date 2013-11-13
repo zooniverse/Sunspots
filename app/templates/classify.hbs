@@ -7,7 +7,13 @@
       <div class="subjects">
         {{render 'subject' first}}
         {{render 'subject' second}}
-        {{partial 'tools'}}
+      </div>
+    </div>
+    
+    <div class="tool">
+      <div {{bindAttr class=":invert isInverted:active"}} {{action "invert" bubbles="false"}}>
+        <div class="label">Invert</div>
+        <div class="icon" data-icon="contrast"></div>
       </div>
     </div>
   </div>

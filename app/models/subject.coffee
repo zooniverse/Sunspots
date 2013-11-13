@@ -2,12 +2,19 @@
 
 module.exports = Ember.Object.extend
   init: ->
-    @set 'image', @get('location').standard
     @set 'invertedImage', @get('location').inverted
     @set 'talkUrl', "#{ talkHost }/#/subjects/#{ @get 'zooniverse_id' }"
     @set 'socialTitle', 'Zooniverse classification'
     @set 'socialMessage', 'Classifying on the Zooniverse!'
     @preloadImages()
+  
+  image: (->
+    type = if @getWithDefault('isInverted', false) then 'inverted' else 'standard'
+    @get('location')[type]
+  ).property('isInverted')
+  
+  toggleInverted: ->
+    @set 'isInverted', !@getWithDefault('isInverted', false)
   
   preloadImages: ->
     for type, url of @get('location')
