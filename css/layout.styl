@@ -1,5 +1,8 @@
 body
   min-width: 320px
+  standard-font()
+  background-color: $blue
+  color: $white
   
   &:after
     position: fixed
@@ -11,15 +14,21 @@ body
     height: 100%
     background: linear-gradient(rgba($blue, 0) 0%, rgba($blue, 0.5) 20%, rgba($blue, 0.8) 80%, rgba($blue, 1) 100%)
 
+a:link, a:active, a:visited
+  outline: 0
+  text-decoration: none
+  color: $white
+  cursor: pointer
+
 .video-wrapper
   position: absolute
-  z-index: -1
+  z-index: -2
   top: 0
   left: 0
   width: 100%
   opacity: 0.5
   
-  video
+  .sun-video, .sun-poster
     position: absolute
     top: -50px
     left: 0
