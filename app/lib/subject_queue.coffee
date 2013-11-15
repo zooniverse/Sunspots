@@ -6,6 +6,7 @@ class SubjectQueue
   @queueMin: 2
   @queue: []
   @current: null
+  @currentFetcher = null
   
   @next: =>
     @current = null
@@ -14,8 +15,9 @@ class SubjectQueue
       @current
   
   @fetch: ->
+    return @currentFetcher if @currentFetcher
     if @queueSize() < @queueMin
-      @fetcher().then(@loadSubjects).then @setCurrent
+      @currentFetcher = @fetcher().then(@loadSubjects).then @setCurrent
     else
       d = deferred()
       d.resolve @current
@@ -26,6 +28,7 @@ class SubjectQueue
       @queue.push SubjectPair.create(pair)
   
   @setCurrent: =>
+    @currentFetcher = null
     @current = @queue.shift()
   
   @fetcher: ->
