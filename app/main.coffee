@@ -24,7 +24,9 @@ App.StatsView = require './views/stats'
 require './templates/stats'
 
 App.SubjectView = require './views/subject'
+App.LastSubjectView = require './views/last_subject'
 require './templates/subject'
+require './templates/last_subject'
 
 App.Router.map ->
   @resource 'classify'

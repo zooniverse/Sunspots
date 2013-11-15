@@ -4,7 +4,7 @@
     <h3>What do we mean by complex?</h3>
     
     <div class="row">
-      <div class="subjects">
+      <div class="current subjects">
         {{render 'subject' first}}
         {{render 'subject' second}}
       </div>
@@ -15,6 +15,15 @@
         <div class="label">Invert</div>
         <div class="icon" data-icon="contrast"></div>
       </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="recent subjects">
+      {{#each recent}}
+        {{render 'last_subject' first}}
+        {{render 'last_subject' second}}
+      {{/each}}
     </div>
   </div>
   

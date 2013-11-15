@@ -13,6 +13,10 @@ module.exports = Ember.Object.extend
     @get('location')[type]
   ).property('isInverted')
   
+  standardImage: (->
+    @get('location').standard
+  ).property()
+  
   toggleInverted: ->
     @set 'isInverted', !@getWithDefault('isInverted', false)
   

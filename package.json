@@ -8,8 +8,7 @@
   },
   "dependencies": {
     "haw": "~0.2.4",
-    "zooniverse": "git://github.com/zooniverse/Zooniverse.git#no-deps",
-    "zootorial": "~0.3.6",
+    "zooniverse": "git://github.com/parrish/Zooniverse.git",
     "clean-css": "0.6.0",
     "webmake-ember-handlebars": "~0.1.3",
     "webmake-coffee": "~0.1.1"

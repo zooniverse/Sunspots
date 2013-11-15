@@ -37,6 +37,15 @@
       background-color: rgba($red, 0.8)
   
   .subjects
+    .subject .image-container
+      center-block()
+      position: relative
+      cursor: pointer
+      
+      img
+        width: 100%
+  
+  .current.subjects
     @extend .col-md-10
     @extend .col-sm-12
     @extend .col-md-offset-1
@@ -51,28 +60,28 @@
         @extend .col-md-offset-1
         @extend .col-sm-offset-1
       
-      .image-container
-        center-block()
-        position: relative
-        cursor: pointer
-        
-        &:after
-          content: ''
-          position: absolute
-          top: 0
-          left: 0
-          width: 100%
-          height: 100%
-          
-          border: 4px solid $white
-          border-radius(2px)
-          
-          @media $media-min-desktop
-            border: 8px solid $white
-            border-radius(4px)
-        
-        img
-          width: 100%
+      .image-container img
+        framed(8px)
+  
+  .recent.subjects
+    @extend .col-md-10
+    @extend .col-sm-12
+    @extend .col-md-offset-1
+    margin-top: 20px
+    min-height: 50px
+    
+    .subject
+      @extend .col-md-1
+      @extend .col-sm-1
+      @extend .col-xs-2
+      
+      margin: 10px 0
+      @media $media-min-desktop
+        margin-bottom: 0
+      
+      .image-container img[src]
+        framed(2px)
+        width: 100%
   
   .tool
     @extend .hidden-xs

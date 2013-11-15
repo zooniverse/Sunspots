@@ -31,6 +31,14 @@ circle()
   &.active
     background-color: $red
 
+framed(size)
+  border: size / 2 solid $white
+  border-radius(size / 4)
+  
+  @media $media-min-desktop
+    border: size solid $white
+    border-radius(size / 2)
+
 transitioned(duration = 200ms)
   vendor('transition-property', 'all')
   vendor('transition-duration', duration)
