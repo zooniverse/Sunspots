@@ -16,6 +16,8 @@ require './templates/team'
 require './templates/discuss'
 require './templates/blog'
 require './templates/profile'
+require './templates/profile/recents'
+require './templates/profile/favorites'
 
 App.TeamMemberComponent = require './components/team_member'
 require './components/team-member'
@@ -35,7 +37,9 @@ App.Router.map ->
   @resource 'team'
   @resource 'discuss'
   @resource 'blog'
-  @resource 'profile'
+  @resource 'profile', ->
+    @route 'recents'
+    @route 'favorites'
 
 App.ClassifyController = require './controllers/classify'
 
@@ -45,3 +49,7 @@ App.ClassifyRoute = Ember.Route.extend
   
   setupController: (controller, pair) ->
     controller.set 'model', pair
+
+App.ProfileIndexRoute = Ember.Route.extend
+  beforeModel: ->
+    @transitionTo 'profile.recents'
