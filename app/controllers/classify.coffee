@@ -9,15 +9,6 @@ module.exports = Ember.ObjectController.extend
     @get 'recentPairs'
   ).property('recentPairs')
   
-  init: ->
-    pairs = @get 'recentPairs'
-    for i in [0...6]
-      pairs.pushObject
-        first: { }
-        second: { }
-    
-    @_super()
-  
   addRecent: (pair) ->
     pairs = @get 'recentPairs'
     pairs.pushObject @get('model')
