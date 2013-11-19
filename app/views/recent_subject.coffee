@@ -1,3 +1,3 @@
 SubjectView = require './subject'
-module.exports = SubjectView.extend
+module.exports = App.RecentSubjectView = SubjectView.extend
   templateName: 'recent_subject'

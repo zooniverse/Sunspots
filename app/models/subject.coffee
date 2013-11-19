@@ -1,6 +1,6 @@
-{ talkHost } = require '../lib/setup/config'
+{ talkHost } = require '../config/settings'
 
-module.exports = Ember.Object.extend
+module.exports = App.Subject = Ember.Object.extend
   init: ->
     @set 'invertedImage', @get('location').inverted
     @set 'talkUrl', "#{ talkHost }/#/subjects/#{ @get 'zooniverse_id' }"

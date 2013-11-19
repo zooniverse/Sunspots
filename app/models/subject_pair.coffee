@@ -1,6 +1,6 @@
 Subject = require './subject'
 
-module.exports = Ember.Object.extend
+module.exports = App.SubjectPair = Ember.Object.extend
   init: ->
     @set '0.order', 'first'
     first = Subject.create @get '0'

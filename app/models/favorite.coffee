@@ -1,4 +1,4 @@
 Recent = require './recent'
 
-module.exports = Recent.extend
+module.exports = App.Favorite = Recent.extend
   type: 'favorite'

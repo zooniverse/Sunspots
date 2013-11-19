@@ -1,4 +1,4 @@
-Config =
+Settings =
   developmentLocal:
     apiHost: 'http://localhost:3000'
     classifyUrl: 'http://localhost:9295/#/classify'
@@ -24,4 +24,4 @@ else if window.location.port > 1024
 else
   'production'
 
-module.exports = Config[env]
+module.exports = Settings[env]

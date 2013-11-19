@@ -1,4 +1,4 @@
-module.exports = Ember.Component.extend
+module.exports = App.TeamMemberComponent = Ember.Component.extend
   tagName: 'div'
   classNames: ['person']
   avatar: (->

@@ -1,5 +1,3 @@
-LoginForm = zooniverse.controllers.LoginForm
-
-module.exports = Ember.View.extend
+module.exports = App.LoginView = Ember.View.extend
   afterRenderEvent: ->
-    new LoginForm el: @$('.sign-in-form')
+    new zooniverse.controllers.LoginForm el: @$('.sign-in-form')

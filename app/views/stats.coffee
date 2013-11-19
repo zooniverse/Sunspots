@@ -1,4 +1,4 @@
-module.exports = Ember.View.extend
+module.exports = App.StatsView = Ember.View.extend
   templateName: 'stats'
   ranked: 34300
   remaining: 190554

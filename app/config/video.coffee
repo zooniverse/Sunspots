@@ -1,4 +1,4 @@
-detectMobile = require '../detect_mobile'
+detectMobile = require '../lib/detect_mobile'
 
 video = $('.sun-video')
 poster = $('.sun-poster')

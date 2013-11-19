@@ -1,4 +1,4 @@
-module.exports = Ember.View.extend
+module.exports = App.SubjectView = Ember.View.extend
   templateName: 'subject'
   classNameBindings: [':subject', 'isFirst:first:second']
   

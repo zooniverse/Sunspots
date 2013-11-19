@@ -1,7 +1,7 @@
 Classification = zooniverse.models.Classification
 SubjectQueue = zooniverse.SubjectQueue
 
-module.exports = Ember.ObjectController.extend
+module.exports = App.ClassifyController = Ember.ObjectController.extend
   recentPairs: []
   switching: false
   
