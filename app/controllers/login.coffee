@@ -3,9 +3,11 @@ module.exports = App.LoginController = Ember.Controller.extend
     zooniverse.models.User.on 'change', => @userDidChange()
   
   userDidChange: ->
+    return unless @get('active')
     transition = @get 'returnTo'
     if transition
-      @set 'returnTo', null
       transition.retry()
     else
       @transitionToRoute 'index'
+    
+    @setProperties returnTo: null, active: false
