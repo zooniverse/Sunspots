@@ -1,0 +1,34 @@
+.zooniverse-profile
+  .sign-in-form
+    .action button
+      transitioned()
+      title-font(700)
+      border-radius(6px)
+      center-block()
+      display: block
+      width: 180px
+      padding: 18px 6px
+      background-color: $light-blue
+      color: $white
+      font-size: 14px
+      line-height: 14px
+      text-transform: uppercase
+      letter-spacing: 1px
+      cursor: pointer
+      
+      &:hover
+        background-color: rgba($light-blue, 0.8)
+    
+    .no-account button
+      appearance: none
+      background: transparent
+      border: 0
+      color: inherit
+      cursor: pointer
+      font: inherit
+      margin: 0 0 0 10px
+      padding: 0
+      
+      &:disabled
+        opacity: 0.5
+        pointer-events: none
