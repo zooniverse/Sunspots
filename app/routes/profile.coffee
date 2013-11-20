@@ -3,17 +3,23 @@ Recent = require '../models/recent'
 Favorite = require '../models/favorite'
 
 App.ProfileRecentsRoute = AuthenticatedRoute.extend
-  type: -> 'recents'
-  klass: -> Recent
+  type: 'recents'
+  klass: Recent
+  per_page: 4
+  page: 1
+  
+  serialize: (model, params) ->
+    page: +params.page or @page
   
   url: ->
-    "/projects/solar/users/#{ zooniverse.models.User.current.id }/#{ @type() }"
+    "/projects/solar/users/#{ zooniverse.models.User.current.id }/#{ @type }"
   
   fetch: (params) ->
-    zooniverse.api.get @url(), page: +params.page
+    @page = +params.page or 1
+    zooniverse.api.get @url(), page: @page, per_page: @per_page
   
   loadRecents: (list) ->
-    @klass().create(item) for item in list
+    @klass.create(item) for item in list
   
   model: (params) ->
     @fetch(params).then (list) => @loadRecents(list)
@@ -22,8 +28,8 @@ App.ProfileRecentsRoute = AuthenticatedRoute.extend
     controller.set 'model', model
 
 App.ProfileFavoritesRoute = App.ProfileRecentsRoute.extend
-  type: -> 'favorites'
-  klass: -> Favorite
+  type: 'favorites'
+  klass: Favorite
 
 App.ProfileIndexRoute = Ember.Route.extend
   beforeModel: ->
