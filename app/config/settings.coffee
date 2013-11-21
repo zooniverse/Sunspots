@@ -12,7 +12,7 @@ Settings =
     analytics: { }
   
   production:
-    apiHost: 'https://api.zooniverse.org'
+    apiHost: 'https://dev.zooniverse.org'
     classifyUrl: 'http://zooniverse-demo.s3-website-us-east-1.amazonaws.com/sunspots/#/classify'
     talkHost: 'http://zooniverse-demo.s3-website-us-east-1.amazonaws.com/sunspots_talk'
     analytics: { }
