@@ -67,6 +67,8 @@
         overflow: hidden
         text-align: center
         cursor: auto
+        margin-left: 0
+        margin-right: 0
         vendor('transition-property', 'opacity')
         vendor('transition-duration', 600ms)
         
@@ -74,11 +76,13 @@
           @extend .col-md-9
           @extend .col-sm-9
           @extend .col-xs-9
+          padding: auto 0
         
         .right
           @extend .col-md-3
           @extend .col-sm-3
           @extend .col-xs-3
+          padding: auto 0
         
         .info
           position: relative

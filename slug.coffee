@@ -15,3 +15,5 @@ module.exports = ->
   jpgOptimizer = @optimize['{*,**/*}.jpg']
   delete @optimize['{*,**/*}.jpg']
   @optimize['/images/*.jpg'] = jpgOptimizer
+  
+  @timestamp['/index.html'] = ['main.js', 'main.css']
