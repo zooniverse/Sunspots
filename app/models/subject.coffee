@@ -17,6 +17,23 @@ module.exports = App.Subject = Ember.Object.extend
     @get('location').standard
   ).property()
   
+  informationData: (->
+    date = @get('metadata.date').split('T')[0].replace /\-/g, '/'
+    [
+      { label: 'Image', value: @get('zooniverse_id') }
+      { label: 'Hale', value: @get('metadata.hale') }
+      { label: 'Taken At', value: date }
+    ]
+  ).property('metadata', 'zooniverse_id')
+  
+  information: (->
+    info = []
+    for { label, value, unit } in @get('informationData')
+      value = zooniverse.util.formatNumber value if typeof value is 'number'
+      info.push { label, value, unit }
+    info
+  ).property('informationData')
+  
   toggleInverted: ->
     @set 'isInverted', !@getWithDefault('isInverted', false)
   

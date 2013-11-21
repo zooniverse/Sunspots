@@ -1,3 +1,20 @@
 <div class="image-container">
   <img {{bindAttr src="standardImage"}}>
+  
+  <div class="information">
+    <div class="left">
+      {{#each info in information}}
+        <div class="info">
+          <div class="label">{{info.label}}</div>
+          <div class="value">{{info.value}} {{info.unit}}</div>
+        </div>
+      {{/each}}
+    </div>
+    
+    <div class="right actions">
+      <div class="action" data-icon="star"></div>
+      <div class="action" data-icon="comment"></div>
+      <div class="action" data-icon="twitter"></div>
+    </div>
+  </div>
 </div>

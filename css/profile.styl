@@ -32,3 +32,92 @@
       &:disabled
         opacity: 0.5
         pointer-events: none
+  
+  .subjects
+    @extend .row
+    
+    .subject
+      @extend .col-md-3
+      @extend .col-sm-4
+      @extend .col-xs-6
+      margin-bottom: 20px
+      
+      .image-container
+        center-block()
+        framed(8px)
+        position: relative
+        cursor: pointer
+        
+        img
+          z-index: 1
+          opacity: 1
+          width: 100%
+          vertical-align: top
+          vendor('transition-property', 'opacity')
+          vendor('transition-duration', 600ms)
+      
+      .information
+        @extend .row
+        opacity: 0.5
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        overflow: hidden
+        text-align: center
+        cursor: auto
+        vendor('transition-property', 'opacity')
+        vendor('transition-duration', 600ms)
+        
+        .left
+          @extend .col-md-9
+          @extend .col-sm-9
+          @extend .col-xs-9
+        
+        .right
+          @extend .col-md-3
+          @extend .col-sm-3
+          @extend .col-xs-3
+        
+        .info
+          position: relative
+          z-index: 2
+          margin-top: 10%
+          
+          .label
+            title-font()
+            color: $red
+            font-size: 12px
+            font-weight: bold
+            text-transform: uppercase
+            letter-spacing: 4px
+          
+          .value
+            condensed-font()
+            font-size: 14px
+            letter-spacing: 1px
+            text-transform: uppercase
+            
+            @media $media-max-tablet
+              font-size: 14px
+            
+            @media $media-min-desktop
+              font-size: 20px
+        
+        .actions
+          text-align: center
+          
+          .action
+            circle()
+            margin-top: 10%
+            cursor: pointer
+            font-size: 22px
+            line-height: 44px
+      
+      &:hover
+        img
+          opacity: 0.5
+        
+        .information
+          opacity: 1
