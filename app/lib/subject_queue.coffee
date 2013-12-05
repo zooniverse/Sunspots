@@ -32,7 +32,7 @@ class SubjectQueue
     @current = @queue.shift()
   
   @fetcher: ->
-    zooniverse.api.get '/projects/solar/subjects', comparison: 'complexity', limit: @toFetch()
+    zooniverse.api.get '/projects/sunspot/groups/random/subjects', comparison: 'complexity', limit: @toFetch()
   
   @toFetch: ->
     Math.max @queueMax - @queueSize(), 0

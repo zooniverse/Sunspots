@@ -12,7 +12,7 @@ App.ProfileRecentsRoute = AuthenticatedRoute.extend
     page: +params.page or @page
   
   url: ->
-    "/projects/solar/users/#{ zooniverse.models.User.current.id }/#{ @type }"
+    "/projects/sunspot/users/#{ zooniverse.models.User.current.id }/#{ @type }"
   
   fetch: (params) ->
     @page = +params.page or 1
