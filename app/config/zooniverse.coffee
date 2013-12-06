@@ -12,7 +12,6 @@ TopBar = require 'zooniverse/controllers/top-bar'
 Footer = require 'zooniverse/controllers/footer'
 
 zooniverse.api = new Api project: 'sunspot', host: Settings.apiHost
-zooniverse.api = new Api project: 'solar', host: Settings.apiHost
 
 languageManager = new LanguageManager
   translations:

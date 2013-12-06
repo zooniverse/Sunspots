@@ -2,5 +2,6 @@ module.exports = App.TeamMemberComponent = Ember.Component.extend
   tagName: 'div'
   classNames: ['person']
   avatar: (->
-    "images/avatars/#{ @get('name').split(' ').pop().toLowerCase().replace(' ', '_') }.png"
+    fileName = @get('name').toLowerCase().replace(/\./g, '').replace /\s+/g, '_'
+    "images/avatars/#{ fileName }.png"
   ).property('name')
