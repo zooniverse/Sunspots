@@ -1,29 +1,22 @@
 <div class="team">
   <section>
-    <h1>The Sunspotters Team</h1>
-    <h3>The scientists behind the science</h3>
+    {{ translate 'h1' 'teamPage.science.header' }}
+    {{ translate 'h3' 'teamPage.science.tagline' }}
     
-    {{#team-member name="Joe Smith" title="Scientist"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Scientist"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Scientist"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Scientist"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Scientist"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Scientist"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Scientist"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
+    {{#team-member name="Paul A. Higgins" title="Scientist"}}{{ translate 'span' 'teamPage.science.bios.higgins' }}{{/team-member}}
+    {{#team-member name="Peter T. Gallagher" title="Scientist"}}{{ translate 'span' 'teamPage.science.bios.gallagher' }}{{/team-member}}
   </section>
   
   <hr />
   
   <section>
-    <h1>The Zooniverse Team</h1>
-    <h3>The people behind the project</h3>
-    {{#team-member name="Joe Smith" title="Developer"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Developer"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Developer"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Developer"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Developer"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Developer"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Developer"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
-    {{#team-member name="Joe Smith" title="Developer"}}A decription of this person who makes stuff at the Zooniverse. Give some mad props.{{/team-member}}
+    {{ translate 'h1' 'teamPage.zooniverse.header' }}
+    {{ translate 'h3' 'teamPage.zooniverse.tagline' }}
+
+    {{#team-member name="Chris Lintott" title="Leader"}}{{ translate 'span' 'teamPage.zooniverse.bios.lintott' }}{{/team-member}}
+    {{#team-member name="Laura Whyte" title="Director"}}{{ translate 'span' 'teamPage.zooniverse.bios.whyte' }}{{/team-member}}
+    {{#team-member name="Michael Parrish" title="Developer"}}{{ translate 'span' 'teamPage.zooniverse.bios.parrish' }}{{/team-member}}
+    {{#team-member name="Heath Van Singel" title="Designer"}}{{ translate 'span' 'teamPage.zooniverse.bios.singel' }}{{/team-member}}
+    {{#team-member name="Kelly Borden" title="Educator"}}{{ translate 'span' 'teamPage.zooniverse.bios.borden' }}{{/team-member}}
   </section>
 </div>

@@ -1,11 +1,18 @@
 <div class="home">
   <div class="row">
     <div class="welcome">
-      <h2>Welcome to</h2>
-      <h1>Sunspotters</h1>
-      <h3>We need you help to organize images of sunspots based on their complexity!</h3>
-      {{#linkTo 'classify' classNames="button"}}Start Ranking{{/linkTo}}
-      {{#linkTo 'science' classNames="science-link"}}<em>What are sunspots?</em>{{/linkTo}}
+      {{ translate 'h2' 'home.welcome' }}
+      {{ translate 'h1' 'home.project' }}
+
+      {{ translate 'h3' 'home.tagline' }}
+
+      {{#linkTo 'classify' classNames="button"}}
+        {{ translate 'span' 'home.callToAction' }}
+      {{/linkTo}}
+
+      {{#linkTo 'science' classNames="science-link"}}
+        {{ translate 'em' 'home.prompt' }}
+      {{/linkTo}}
     </div>
   </div>
   
