@@ -1,5 +1,7 @@
+translate = require 't7e'
+
 Ember.Handlebars.helper 'formatNumber', (number) ->
   new Handlebars.SafeString window.zooniverse.util.formatNumber(number)
 
-Ember.Handlebars.helper 'translate', (key) ->
-  new Handlebars.SafeString window.zooniverse.translate(key)
+Ember.Handlebars.registerHelper 'translate', (args..., emberOptions) ->
+  new Handlebars.SafeString translate args...
