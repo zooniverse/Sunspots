@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "scripts": {
     "start": "haw serve",
-    "stage": "haw build && publisssh -i 'subjects|video' build zooniverse-demo/sunspots && rm -rf build"
+    "stage": "haw build && publisssh -i 'subjects' build www.sunspotter.org/beta && rm -rf build"
   },
   "dependencies": {
     "haw": "~0.2.4",

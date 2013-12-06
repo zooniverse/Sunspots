@@ -1,7 +1,5 @@
 require './application'
-require './blog'
 require './classify'
-require './discuss'
 require './education'
 require './index'
 require './login'
