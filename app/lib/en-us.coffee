@@ -7,7 +7,7 @@ module.exports =
     tagline: "We need you help to organize images of sunspots based on their complexity!"
     callToAction: "Start Ranking"
     prompt: "What are sunspots?"
-
+  
   navigation:
     classify: "Classify"
     science: "Science"
@@ -16,16 +16,16 @@ module.exports =
     discuss: "Discuss"
     blog: "Blog"
     profile: "Profile"
-
+  
   classifyPage:
     question: "Which is more complex?"
     explanationPrompt: "What do we mean by complex?"
     invert: "Invert"
     chooseSubject: "Choose"
-
+  
   sciencePage:
     text: "Summary of studies comparing sunspot group properties to flaring...studies of sunspot group complexity..."
-
+  
   educationPage:
     classroomActivities: 
       header: "Classroom Activities"
@@ -40,7 +40,7 @@ module.exports =
       tracing: """
         Tracing visible/magnetic/EUV sunspot group images on transparencies, to determine if people agree on a way to group them. Shows how it is easy to group in visible, less easy in magnetic, difficult in EUV. Explain importance of deciding how to determine what is a single sunspot group. The definition of a detection has a large role in determining the distributions of sunspot group properties you see in the end. These distributions are used to study the physical characteristics of sunspot formation, evolution, decay, and for flare forecasting.
         """
-
+  
   teamPage:
     science:
       header: "The Sunspotters Team"
@@ -57,7 +57,7 @@ module.exports =
         parrish: "The developer"
         singel: "The designer"
         borden: "The educator"
-
+  
   profile:
     signInForProfile: "Sign In"
     noAccount: "No Account?"
@@ -65,11 +65,9 @@ module.exports =
     signIn: "Sign In"
     username: "Username"
     password: "Password"
-
+  
   stats:
     imagesRanked: "Images Ranked"
     imagesRemaining: "Images Remaining"
     communityProgress: "Community Progress"
     regionsAvailable: "Regions Available"
-
-
