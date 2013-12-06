@@ -2,6 +2,7 @@ Classification = zooniverse.models.Classification
 SubjectQueue = zooniverse.SubjectQueue
 
 module.exports = App.ClassifyController = Ember.ObjectController.extend
+  classification: null
   recentPairs: []
   switching: false
   
@@ -22,11 +23,14 @@ module.exports = App.ClassifyController = Ember.ObjectController.extend
     choose: (subject) ->
       return if @get('switching')
       @set 'switching', true
-      classification = new Classification subjects: @get('model').subjects
-      classification.annotate selected_id: subject.id
-      classification.annotate inverted: @getWithDefault('invertedToggled', false)
-      classification.send()
+      
+      @get('classification').annotate selected_id: subject.id
+      @get('classification').annotate inverted: @getWithDefault('invertedToggled', false)
+      @get('classification').send()
+
       SubjectQueue.next().then (pair) =>
         @addRecent()
+
         @set 'model', pair
         @set 'switching', false
+        @set 'classification', new Classification subjects: @get('model').subjects
