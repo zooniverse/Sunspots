@@ -8,11 +8,11 @@
     "stage": "haw build && publisssh -i 'subjects|video' build www.sunspotter.org/beta && rm -rf build"
   },
   "dependencies": {
-    "haw": "~0.2.4",
-    "zooniverse": "0.3.3",
-    "publisssh": "~0.2.1",
-    "webmake-ember-handlebars": "~0.1.3",
-    "webmake-coffee": "~0.1.1",
+    "haw": "~0.2.17",
+    "zooniverse": "0.3.11",
+    "publisssh": "~0.2.3",
+    "webmake-ember-handlebars": "~0.1.4",
+    "webmake-coffee": "~0.1.3",
     "t7e": "~0.2.3"
   }
 }
