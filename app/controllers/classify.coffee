@@ -8,18 +8,9 @@ module.exports = App.ClassifyController = Ember.ObjectController.extend
   recentPairs: []
   switching: false
   
-  recent: (->
-    @get 'recentPairs'
-  ).property('recentPairs')
-  
   project: (->
     @get('application.model')
   ).property('')
-  
-  addRecent: (pair) ->
-    pairs = @get 'recentPairs'
-    pairs.pushObject @get('model')
-    pairs.shiftObject() while pairs.length > 6
   
   actions:
     invert: ->
@@ -35,7 +26,6 @@ module.exports = App.ClassifyController = Ember.ObjectController.extend
       @get('classification').send()
       
       SubjectQueue.next().then (pair) =>
-        @addRecent()
         @set 'model', pair
         @set 'switching', false
         if pair
