@@ -25,6 +25,10 @@ module.exports = App.ClassifyController = Ember.ObjectController.extend
       @get('classification').annotate inverted: @getWithDefault('invertedToggled', false)
       @get('classification').send()
       
+      user = zooniverse.models.User.current
+      user.project.classification_count += 1 if user
+      zooniverse.classificationCount += 1
+      
       SubjectQueue.next().then (pair) =>
         @set 'model', pair
         @set 'switching', false

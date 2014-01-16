@@ -15,24 +15,37 @@ class SubjectQueue
       @current
   
   @fetch: ->
-    return @currentFetcher if @currentFetcher
-    if @queueSize() < @queueMin
-      @currentFetcher = @fetcher().then(@loadSubjects).then @setCurrent
+    if not @currentFetcher and @queueSize() < @queueMin
+      @currentFetcher = @fetcher().then(@loadSubjects).then @setFetchedCurrent
+    
+    if @queueSize() is 0
+      @currentFetcher
     else
+      @setCurrent()
       d = deferred()
       d.resolve @current
       d.promise()
+  
+  @adjustQueueSize: ->
+    if zooniverse.classificationCount > 10
+      @queueMax = 10
+    else if zooniverse.classificationCount > 50
+      @queueMax = 20
   
   @loadSubjects: (list) =>
     for pair in list
       @queue.push SubjectPair.create(pair)
   
   @setCurrent: =>
-    @currentFetcher = null
-    @current = @queue.shift()
+    @current or= @queue.shift()
   
   @fetcher: ->
-    zooniverse.api.get '/projects/sunspot/groups/random/subjects', comparison: 'complexity', limit: @toFetch()
+    @adjustQueueSize()
+    zooniverse.api.get '/projects/sunspot/groups/subject_pairs', limit: @toFetch()
+  
+  @setFetchedCurrent: (result) =>
+    @currentFetcher = null
+    @current or= @queue.shift()
   
   @toFetch: ->
     Math.max @queueMax - @queueSize(), 0

@@ -29,3 +29,4 @@ zooniverse.util = $.extend zooniverse.util, require '../lib/util'
 zooniverse.SubjectQueue = require '../lib/subject_queue'
 User.fetch()
 zooniverse.SubjectQueue.fetch()
+zooniverse.classificationCount = 0
