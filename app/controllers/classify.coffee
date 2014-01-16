@@ -2,6 +2,8 @@ Classification = zooniverse.models.Classification
 SubjectQueue = zooniverse.SubjectQueue
 
 module.exports = App.ClassifyController = Ember.ObjectController.extend
+  needs: ['application']
+  applicationBinding: 'controllers.application'
   classification: null
   recentPairs: []
   switching: false
@@ -9,6 +11,10 @@ module.exports = App.ClassifyController = Ember.ObjectController.extend
   recent: (->
     @get 'recentPairs'
   ).property('recentPairs')
+  
+  project: (->
+    @get('application.model')
+  ).property('')
   
   addRecent: (pair) ->
     pairs = @get 'recentPairs'
@@ -32,4 +38,8 @@ module.exports = App.ClassifyController = Ember.ObjectController.extend
         @addRecent()
         @set 'model', pair
         @set 'switching', false
-        @set 'classification', new Classification subjects: @get('model').subjects
+        if pair
+          @set 'classification', new Classification subjects: @get('model').subjects
+        else
+          # TO-DO: error reporting
+          @transitionTo 'index'

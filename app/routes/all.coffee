@@ -1,3 +1,4 @@
+require './application'
 require './authenticated'
 require './classify'
 require './login'

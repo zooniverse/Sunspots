@@ -67,7 +67,7 @@ module.exports =
     password: "Password"
   
   stats:
-    imagesRanked: "Images Ranked"
-    imagesRemaining: "Images Remaining"
-    communityProgress: "Community Progress"
-    regionsAvailable: "Regions Available"
+    rankings: "Rankings"
+    total: "Images"
+    pass: "Pass"
+    users: "Volunteers"
