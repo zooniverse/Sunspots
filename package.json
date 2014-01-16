@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "haw": "~0.2.17",
-    "zooniverse": "0.3.11",
+    "zooniverse": "0.3.13",
     "publisssh": "~0.2.3",
     "webmake-ember-handlebars": "~0.1.4",
     "webmake-coffee": "~0.1.3",
