@@ -1,4 +1,6 @@
 .zooniverse-profile
+  @extend .row
+  
   .sign-in-form
     .action button
       transitioned()
@@ -33,6 +35,52 @@
         opacity: 0.5
         pointer-events: none
   
+  .row
+    margin: 5px 0 20px 0
+  
+  h1
+    title-font(700)
+    margin-bottom: 10px
+    font-size: 20px
+    text-transform: uppercase
+    text-align: center
+    letter-spacing: 5px
+  
+  .switcher
+    @extend .row
+    @extend .clearfix
+    text-align: left
+    padding: 15px
+    
+    .links
+      float: left
+      
+      a
+        transitioned()
+        display: inline-block
+        margin: 0 7px 0 0
+        padding: 3px 6px
+        font-size: 12px
+        line-height: 12px
+        border-radius(12px)
+        border: 2px solid rgba($red, 0)
+        text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.3)
+        letter-spacing: 1px
+        background-color: rgba($red, 0)
+        
+        &:hover, &.active
+          border: 2px solid $red
+        
+        &.active
+          background-color: $red
+        
+        &.active:hover
+          background-color: rgba($red, 0.8)
+          border: 2px solid transparent
+      
+    .pages
+      float: right
+  
   .subjects
     @extend .row
     
@@ -58,7 +106,7 @@
       
       .information
         @extend .row
-        opacity: 0.5
+        opacity: 0.3
         position: absolute
         top: 0
         left: 0
@@ -117,7 +165,10 @@
             margin-top: 10%
             cursor: pointer
             font-size: 22px
-            line-height: 44px
+            line-height: 39px
+            
+            &.favorited
+              background-color: $red
       
       &:hover
         img

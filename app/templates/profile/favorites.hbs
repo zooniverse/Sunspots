@@ -1,4 +1,19 @@
-{{#each}}
-  {{render 'recent_subject' first}}
-  {{render 'recent_subject' second}}
-{{/each}}
+<div class="row">
+  {{translate 'h1' 'profile.favoriteImages'}}
+</div>
+
+<div class="switcher">
+  <div class="links">
+    {{#link-to 'profile.recents' 1}}{{translate 'profile.recents'}}{{/link-to}}
+    {{#link-to 'profile.favorites' 1 classNames="active"}}{{translate 'profile.favorites'}}{{/link-to}}
+  </div>
+  <div class="pages">
+    
+  </div>
+</div>
+
+<div class="subjects">
+  {{#each}}
+    {{render 'recent_subject' subject}}
+  {{/each}}
+</div>

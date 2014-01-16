@@ -34,6 +34,10 @@ module.exports = App.Subject = Ember.Object.extend
     info
   ).property('informationData')
   
+  isFavorited: (->
+    @getWithDefault('favorited', false) or !!@get('favorite_id')
+  ).property('favorited', 'favorite_id')
+  
   toggleInverted: ->
     @set 'isInverted', !@getWithDefault('isInverted', false)
   

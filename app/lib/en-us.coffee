@@ -65,6 +65,10 @@ module.exports =
     signIn: "Sign In"
     username: "Username"
     password: "Password"
+    recents: 'Recents'
+    favorites: 'Favorites'
+    recentImages: 'Recent Images'
+    favoriteImages: 'Favorite Images'
   
   stats:
     rankings: "Rankings"

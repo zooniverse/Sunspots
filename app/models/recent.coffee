@@ -8,3 +8,5 @@ module.exports = App.Recent = Ember.Object.extend
     @set 'subjects', pair
     @set 'first', pair.get('first')
     @set 'second', pair.get('second')
+    @set 'first.recent_id', @get('id')
+    @set 'second.recent_id', @get('id')

@@ -30,6 +30,7 @@ App.ProfileRecentsRoute = AuthenticatedRoute.extend
 App.ProfileFavoritesRoute = App.ProfileRecentsRoute.extend
   type: 'favorites'
   klass: Favorite
+  per_page: 8
 
 App.ProfileIndexRoute = Ember.Route.extend
   beforeModel: ->
