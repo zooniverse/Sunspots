@@ -47,16 +47,27 @@ module.exports =
       tagline: "The scientists behind the science"
       bios:
         higgins: "Paul has stoked his passion for expanding the interface between research and public outreach; first, as a developer of UniverseAdventure.org, then by working on SolarMontitor.org, and now by leading the SunSpotters science team."
-        gallagher: "Peter is an associate professor at Trinity College Dublin, Ireland, where he runs a research group in solar physics and teaches undergraduate physics."
+        gallagher: "Peter is an associate professor at Trinity College Dublin, Ireland, where he runs a research group in solar physics and teaches undergraduate physics. He spends his time trying to understand how the Sun works and how it can affect the Earth."
+        perez_suarez: "David is a post-doc at the Space Weather Team in the South African National Space Agency (SANSA), working as the Solar Physicist of the team.  Before South Africa David has been in Finland, Ireland, Northern Ireland, and Spain where he was born and did his physics degree."
+        o_callaghan: "David has a B.A. and Ph.D. in computer science from Trinity College Dublin. David works as a senior software engineer with SilverCloud Health, developing and running an online platform for supporting mental health and well-being."
+        roche: "Joseph studied Physics and Astrophysics at Trinity College before completing his PhD in 2012 as part of the Astrophysics Research Group.He is now Research Projects Coordinator for Science Gallery Dublin where his role is to find new opportunities for research and collaboration."
+        o_neill: "Arlene is STEM communication and outreach officer at AMBER, Trinity College Dublin (TCD). She is passionate about public engagement and is involved in a range of scientific outreach projects."
+        ryan: "Dan completed a PhD at Trinity in solar physics as part of the Astrophysics Research Group. He has been leading the SunSpotters school outreach programme around Ireland and has just taken up a new posting at the Royal Observatory of Belgium in Brussels."
+        bloomfield: "Shaun is a Senior Researcher in solar physics and space weather at Trinity College Dublin, Ireland. Shaun has worked on several spacecraft that observe the Sun, including the upcoming European Space Agency Solar Orbiter satellite mission."
+        murray: "Sophie has been fascinated with space since she was a child. It was a natural step for her to complete a PhD in Solar Physics with the Astrophysics Research Group at Trinity College Dublin. Since 2013 Sophie has worked as a Space Weather Research Scientist at the Met Office UK."
+        slater: ""
+        leka: ""
+        barnes: ""
     zooniverse:
       header: "The Zooniverse Team"
       tagline: "The people behind the project"
       bios:
-        lintott: "Our Illustrious Leader"
-        whyte: "Our Director"
-        parrish: "The developer"
-        singel: "The designer"
-        borden: "The educator"
+        borden: "With a background in museum education, Kelly joined the Zooniverse in 2011 to bring an educator's perspective and spread the word amongst teachers and students. She's fond of several C's: chocolate, cats, coffee, and more chocolate."
+        lintott: "Astronomer and founder of both Galaxy Zoo and the Zooniverse that grew from it, Chris is interested in how galaxies form and evolve, how citizen science can change the world, and whether the Chicago Fire can get their act together."
+        parrish: "Michael builds the Zooniverse infrastructure and the occasional project. Aside from web development; new technologies, science, a collection of hobbies tends to occupy his attention."
+        singel: "Heath is the UX/UI Designer for projects at the Zooniverse where he works to craft thoughtful and engaging user experiences. Apart from design Heath also enjoys illustration, a good sci-fi or fantasy novel, and trips back to Michigan."
+        snyder: "Chris Snyder began working on the Zooniverse team in fall 2012 as a web developer. In July 2013, he became the technical project manager. He received a degree in computer science from the University of Dayton."
+        whyte: "As a former high school teacher and educator, with a PhD in galaxy classification, joining the Zooniverse as an educator was a natural fit for Laura. She's working to support teachers to use Zooniverse citizen science projects in the classroom."
   
   profile:
     signInForProfile: "Sign In"

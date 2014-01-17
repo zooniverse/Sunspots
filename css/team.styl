@@ -1,5 +1,9 @@
 .team
+  @extend .container
+  
   section
+    @extend .row
+    
     &:last-child
       padding-top: 45px
     
@@ -7,27 +11,24 @@
     padding-bottom: 20px
     
     h1
-      title-font(700)
-      margin: 5px 0
-      font-size: 20px
-      text-transform: uppercase
-      text-align: center
-      letter-spacing: 5px
+      titled()
     
     h3
-      title-font()
-      margin: 5px 0
-      font-size: 12px
-      text-align: center
-      letter-spacing: 1px
+      subtitled()
     
     hr
       rule-above()
     
     .person
-      @extend .col-md-3
-      @extend .col-sm-6
-      @extend .col-xs-12
+      @media $media-min-tablet
+        width: 49%
+      
+      @media $media-min-desktop
+        width: 24%
+      
+      display: inline-block
+      position: relative
+      vertical-align: top
       min-width: 170px
       margin: 40px 0
       padding: 0 10px
