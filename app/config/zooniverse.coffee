@@ -30,3 +30,5 @@ zooniverse.SubjectQueue = require '../lib/subject_queue'
 User.fetch()
 zooniverse.SubjectQueue.fetch()
 zooniverse.classificationCount = 0
+GoogleAnalytics = require '../lib/analytics'
+window.zooniverse.GoogleAnalytics = new GoogleAnalytics
