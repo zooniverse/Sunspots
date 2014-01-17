@@ -8,5 +8,3 @@ require './controllers/all'
 require './views/all'
 require './templates/all'
 require './components/all'
-
-require './config/video'
