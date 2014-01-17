@@ -26,6 +26,7 @@ module.exports = App.ClassifyController = Ember.ObjectController.extend
   
   actions:
     explain: ->
+      zooniverse.GoogleAnalytics.event category: 'navigation', action: 'click', label: 'classify', 'help'
       @explanation or= @explanationDialog()
       @explanation.show()
     

@@ -3,7 +3,7 @@ class GoogleAnalytics
     $(window).on 'hashchange', ->
       window.ga 'send', 'pageview', "/#{ window.location.hash }"
   
-  event: (category, action, label, value, ignoreForBounceRate) ->
-    window.ga 'send', 'event', 'category', 'action', page: pathname
+  event: (opts = { }) ->
+    window.ga 'send', 'event', opts.category, opts.action, opts.label, opts.value
 
 module.exports = GoogleAnalytics
