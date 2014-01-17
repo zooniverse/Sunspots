@@ -1,3 +1,4 @@
+translate = require 't7e'
 Classification = zooniverse.models.Classification
 SubjectQueue = zooniverse.SubjectQueue
 
@@ -12,7 +13,22 @@ module.exports = App.ClassifyController = Ember.ObjectController.extend
     @get('application.model')
   ).property('')
   
+  explanationDialog: ->
+    html = """
+      <button type="button" name="close-dialog">&times;</button>
+      <div class="explanation">
+        #{ translate 'p', 'explanation.part1' }
+        #{ translate 'p', 'explanation.part2' }
+        #{ translate 'p', 'explanation.part3' }
+      </div>
+    """
+    dialog = new zooniverse.controllers.Dialog content: $(html)
+  
   actions:
+    explain: ->
+      @explanation or= @explanationDialog()
+      @explanation.show()
+    
     invert: ->
       @set 'invertedToggled', true
       @get('model').toggleInverted()

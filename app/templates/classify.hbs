@@ -1,7 +1,9 @@
 <div class="classify">
   <div class="row">
     {{translate 'h1' 'classifyPage.question'}}
-    {{translate 'h3' 'classifyPage.explanationPrompt'}}
+    <h3 {{action "explain" bubbles="false"}}>
+      {{translate 'classifyPage.explanationPrompt'}}
+    </h3>
     
     <div class="row">
       <div class="current subjects">
