@@ -24,7 +24,7 @@ module.exports =
     chooseSubject: "Choose"
   
   sciencePage:
-    text: "Summary of studies comparing sunspot group properties to flaring...studies of sunspot group complexity..."
+    text: ""
   
   educationPage:
     classroomActivities:
