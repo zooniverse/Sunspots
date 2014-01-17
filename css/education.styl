@@ -2,27 +2,23 @@
   section
     margin-bottom: 40px
   
-  h1, .row div
+  .row h1, .row div
     @extend .col-md-10
     @extend .col-sm-10
     @extend .col-xs-12
     @extend .col-md-offset-1
     @extend .col-sm-offset-1
+    padding: 0 10px
   
   h1
-    title-font(700)
-    margin-bottom: 10px
-    font-size: 20px
-    text-transform: uppercase
-    text-align: center
-    letter-spacing: 5px
+    titled()
   
-  .row
-    margin: 5px 0 20px 0
-    
-    div
-      font-size: 14px
-      padding: 0 10px
-      text-align: center
-      @media $media-min-desktop
-        text-align: left
+  section
+    .row
+      margin: 0 0 20px 0
+      
+      div
+        font-size: 14px
+        text-align: center
+        @media $media-min-desktop
+          text-align: left
