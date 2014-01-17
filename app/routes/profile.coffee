@@ -5,7 +5,8 @@ Favorite = require '../models/favorite'
 App.ProfileRecentsRoute = AuthenticatedRoute.extend
   type: 'recents'
   klass: Recent
-  per_page: 4
+  perPage: 4
+  entriesPerPage: 8
   page: 1
   
   serialize: (model, params) ->
@@ -16,13 +17,22 @@ App.ProfileRecentsRoute = AuthenticatedRoute.extend
   
   fetch: (params) ->
     @page = +params.page or 1
-    zooniverse.api.get @url(), page: @page, per_page: @per_page
+    zooniverse.api.get @url(), page: @page, per_page: @perPage
   
   loadRecents: (list) ->
     @klass.create(item) for item in list
   
+  totalEntries: ->
+    2 * zooniverse.models.User.current.project.classification_count
+  
   model: (params) ->
-    @fetch(params).then (list) => @loadRecents(list)
+    @fetch(params).then (list) =>
+      data = @loadRecents list
+      data.type = @type
+      data.page = @page
+      data.entries = @totalEntries()
+      data.pages = Math.ceil data.entries / @entriesPerPage
+      data
   
   setupController: (controller, model) ->
     controller.set 'model', model
@@ -30,7 +40,10 @@ App.ProfileRecentsRoute = AuthenticatedRoute.extend
 App.ProfileFavoritesRoute = App.ProfileRecentsRoute.extend
   type: 'favorites'
   klass: Favorite
-  per_page: 8
+  perPage: 8
+  
+  totalEntries: ->
+    zooniverse.models.User.current.project.favorite_count
 
 App.ProfileIndexRoute = Ember.Route.extend
   beforeModel: ->

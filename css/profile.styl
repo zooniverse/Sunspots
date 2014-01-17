@@ -79,7 +79,20 @@
           border: 2px solid transparent
       
     .pages
-      float: right
+      margin-top: 10px
+      @media $media-min-desktop
+        margin-top: auto
+        float: right
+      
+      .previous
+        margin-right: 20px
+      
+      .next
+        margin-left: 20px
+      
+      .disabled
+        opacity: 0.5
+        pointer-events: none
   
   .subjects
     @extend .row

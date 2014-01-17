@@ -69,6 +69,9 @@ module.exports =
     favorites: 'Favorites'
     recentImages: 'Recent Images'
     favoriteImages: 'Favorite Images'
+    pages: 'Page {x} of {y}'
+    next: 'Next'
+    previous: 'Previous'
   
   stats:
     rankings: "Rankings"

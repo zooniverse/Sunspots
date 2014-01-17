@@ -7,9 +7,8 @@
     {{#link-to 'profile.recents' 1}}{{translate 'profile.recents'}}{{/link-to}}
     {{#link-to 'profile.favorites' 1 classNames="active"}}{{translate 'profile.favorites'}}{{/link-to}}
   </div>
-  <div class="pages">
-    
-  </div>
+  <div class="clearfix visible-sm visible-xs"></div>
+  {{paginate model}}
 </div>
 
 <div class="subjects">
