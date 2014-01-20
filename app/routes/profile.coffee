@@ -23,7 +23,7 @@ App.ProfileRecentsRoute = AuthenticatedRoute.extend
     @klass.create(item) for item in list
   
   totalEntries: ->
-    2 * zooniverse.models.User.current.project.classification_count
+    2 * (zooniverse.models.User.current.project?.classification_count or 0)
   
   model: (params) ->
     @fetch(params).then (list) =>
@@ -43,7 +43,7 @@ App.ProfileFavoritesRoute = App.ProfileRecentsRoute.extend
   perPage: 8
   
   totalEntries: ->
-    zooniverse.models.User.current.project.favorite_count
+    zooniverse.models.User.current.project?.favorite_count or 0
 
 App.ProfileIndexRoute = Ember.Route.extend
   beforeModel: ->
