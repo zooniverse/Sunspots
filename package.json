@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "scripts": {
     "start": "haw serve",
-    "stage": "haw build && publisssh build www.sunspotter.org/beta && rm -rf build"
+    "stage": "haw build && publisssh build www.sunspotter.org/beta && rm -rf build",
+    "stage-locale": "seed-translation --env staging"
   },
   "dependencies": {
     "haw": "~0.2.17",
@@ -14,6 +15,6 @@
     "webmake-ember-handlebars": "~0.1.4",
     "webmake-coffee": "~0.1.3",
     "t7e": "~0.2.3",
-    "translator-seed": "0.0.3"
+    "translator-seed": "0.0.4"
   }
 }
