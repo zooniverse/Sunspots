@@ -10,8 +10,8 @@ module.exports = App.ClassifyController = Ember.ObjectController.extend
   switching: false
   
   project: (->
-    @get('application.model')
-  ).property('')
+    @get 'application.model'
+  ).property('application.model')
   
   explanationDialog: ->
     html = """

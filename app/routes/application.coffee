@@ -4,3 +4,12 @@ module.exports = App.ApplicationRoute = Ember.Route.extend
   
   setupController: (controller, project) ->
     controller.set 'model', project
+  
+  activate: ->
+    reloadModel = =>
+      zooniverse.api.get('/projects/sunspot').then (project) =>
+        @set 'model', project
+        @set 'controller.model', project
+        setTimeout reloadModel, 5000
+    
+    setTimeout reloadModel, 5000

@@ -3,5 +3,5 @@ module.exports = App.IndexController = Ember.ObjectController.extend
   applicationBinding: 'controllers.application'
   
   project: (->
-    @get('application.model')
-  ).property('')
+    @get 'application.model'
+  ).property('application.model')
