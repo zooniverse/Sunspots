@@ -56,7 +56,7 @@ module.exports =
         bloomfield: "Shaun is a Senior Researcher in solar physics and space weather at Trinity College Dublin, Ireland. Shaun has worked on several spacecraft that observe the Sun, including the upcoming European Space Agency Solar Orbiter satellite mission."
         murray: "Sophie has been fascinated with space since she was a child. It was a natural step for her to complete a PhD in Solar Physics with the Astrophysics Research Group at Trinity College Dublin. Since 2013 Sophie has worked as a Space Weather Research Scientist at the Met Office UK."
         slater: ""
-        leka: ""
+        leka: "KD is a Senior Research Scientist at NorthWest Research Associates, in Boulder, Colorado, USA. She studies the magnetic fields on the Sun and is interested in developing methods to forecast solar flares."
         barnes: ""
     zooniverse:
       header: "The Zooniverse Team"
