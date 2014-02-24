@@ -4,7 +4,7 @@ module.exports =
   home:
     welcome: 'Welcome To'
     project: "#{ PROJECT_NAME }"
-    tagline: "We need you help to organize images of sunspots based on their complexity!"
+    tagline: "We need your help to organize sunspot images in order of complexity to better understand and predict how the Sun's magnetic activity affects us on Earth."
     callToAction: "Start Ranking"
     prompt: "What are sunspots?"
   
