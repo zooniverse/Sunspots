@@ -79,7 +79,7 @@ module.exports =
       complexityCaption:
         text1: """
           From left to right, The most simple class is alpha: one polarity (e.g., "north/south", or "positive/negative", or in these images "black/white") of magnetic field
-          """
+        """
         text2: "Beta is slightly more complex: two polarities, or bipolar"
         text3: "A classification of gamma is more complex and indicates that the polarities are mixed together"
         credit: "Data courtesy of the SDO/HMI and SDO/AIA consortia."
@@ -156,19 +156,65 @@ module.exports =
         p2: "Analysis of the current dataset will allow us to determine the relationship between sunspot group magnetic complexity and other magnetic properties, such as magnetic area; flux; polarity imbalance; and the length of the polarity separation line - separating positive and negative regions of a given sunspot group image."
   
   educationPage:
-    classroomActivities:
-      header: "Classroom Activities"
-      classifySunspots: """
-        Have students classify sunspot group images using the Hale scheme and measure the total area of sunspots in each group by hand (using a regular grid). Then, using knowledge of which region produced the largest flare, a plot of largest flare versus sunspot area is made, with the hale class indicated by a symbol. This recreates work by Sammis et al. (2000).
+    classroom:
+      title: "Can I use Sunspotter in the classroom?"
+      p1: "Of course! Like all Zooniverse projects, Sunspotter is primarily a science project but offers students a great way to contribute to current cutting-edge research."
+    
+    resources:
+      title: "What resources are there to support Sunspotter in the classroom?"
+      
+      videos:
+        text: "Videos are a great tool to introduce students to sunspots.  Here are a couple of our favorites"
+        
+        mysteries:
+          link: "Mysteries of the Sun by NASA"
+          description: "These videos overview a variety of heliophysics topics including sunspots and space weather."
+        
+        solarStorms:
+          link: "Solar Storms with Daniel Ryan"
+          description: "Sunspots are only one example of our Sun’s dynamic activity. In this video Daniel Ryan from the Sunspotters science team introduces solar storms and how they affect our lives on Earth."
+        
+        spaceWeather:
+          link: "Solar Storms and Space Weather with Pietro Zucca"
+          description: "This video overviews how solar activity affects technology here on Earth and using radio telescopes to monitor the sun’s activity."
+        
+        higgins:
+          link: "Dr. Paul Higgins"
+          description: "A member of the Sunspotter science team, explains his interest in solar physics and how you can help."
+      
+      zooTeach:
+        text: """
+          <a href="http://www.zooteach.org" target="_blank">ZooTeach</a> is a companion website to the Zooniverse where educators can find and share educational resources relating to Sunspotters and the other Zooniverse citizen science projects.  Here are a couple to get started.
         """
-    galleryActivities:
-      header: "Science Gallery Activities"
-      recreation: """
-        Recreating the sunspotters classification activity using printed pairs of images. Could show groups of students one pair at a time and have them choose A or B, or, could give the groups a stack of individual images and have them put them in order on a table from least to most complex, compact, total area. Then tell them which images were responsible for a flare, and have them make a graph of complexity versus area, and plot the ones that flared in red and the ones that did not flare in gray.
+        
+        magneticSun:
+          link: "The Magnetic Sun"
+          description: """
+            Originally created for Zooniverse’s <a href="http://www.solarstormwatch.com" target="_blank">Solar Stormwatch</a>, in this lesson students learn about the role magnetism plays in sunspots, how sunspots can lead to solar flares, and how to identify them.
+          """
+        
+        exploreSunspots:
+          link: "Explore Sunspots"
+          description: "Let your students try their hand at measuring the size of sunspot groups and then plot solar flare magnitude vs sunspot area and complexity."
+        
+        exploreSunspotsPresentation:
+          link: "Explore Sunspots Introductory Presentation"
+          description: "Introduce your students to the science behind Sunspotter with this PowerPoint developed by Daniel Ryan, a member of the Sunspotter Science Team and adapted by Zooniverse educators."
+        
+        sunspotter: """
+          Sunspotter is a recent addition to Zooniverse, so if you have any ideas for how to use the project in the classroom, please share your lesson ideas or resources on <a href="http://www.zooteach.org" target="_blank">ZooTeach</a>.
         """
-      tracing: """
-        Tracing visible/magnetic/EUV sunspot group images on transparencies, to determine if people agree on a way to group them. Shows how it is easy to group in visible, less easy in magnetic, difficult in EUV. Explain importance of deciding how to determine what is a single sunspot group. The definition of a detection has a large role in determining the distributions of sunspot group properties you see in the end. These distributions are used to study the physical characteristics of sunspot formation, evolution, decay, and for flare forecasting.
-        """
+    
+    keepUp:
+      title: "How can I keep up to date with education and Sunspotter?"
+      
+      p1: """
+        The <a href="http://blog.sunspotter.org" target="_blank">Sunspotter blog</a> and <a href="https://twitter.com/sun_spotter" target="_blank">@sun_spotter</a> Twitter feed are great places to keep up to date with the latest science results.
+      """
+      
+      p2: """
+        Check out the <a href="http://education.zooniverse.org" target="_blank">Zooniverse Education blog</a> and the <a href="https://twitter.com/ZooTeach" target="_blank">@zooteach</a> Twitter feed for the latest information about using Zooniverse projects in educational settings.
+      """
   
   teamPage:
     science:
