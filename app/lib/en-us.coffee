@@ -114,6 +114,28 @@ module.exports =
       
       auroraEarthCaption:
         credit: "Image Courtesy of NASA"
+    
+    goals:
+      title: "Science goals and why we need you"
+      
+      motivation:
+        p1: "At the beginning any research project we must ask: What is the science goal?  The long term goal of our research is two-fold."
+        p2: "In Sunspotter we aim to construct a reliable measure of sunspot group complexity."
+        p3: "This means we want to be able to take a picture of a sunspot group and say, from 1 to 10, how complex is this sunspot group?"
+        p4: "This will help with some of solar physics' unanswered questions including"
+        list1: "Are sunspots born complex or do they evolve to become complex?"
+        list2: "Do sunspot groups that are more complex produce more eruptions?"
+        p5: "Additionally, we seek to achieve a better physical understanding of how sunspot groups produce eruptions as well as to improve the accuracy of making predictions of solar eruptions."
+        p6: "Like weather forecasting on Earth, we currently can not predict eruptions with any accuracy."
+        p7: "This will expand human knowledge about the Sun and allow us to more effectively protect humans in (and near) outer space."
+      
+      volunteers:
+        p1: "So far, automated methods have not been able to reliably determine the complexity of sunspot groups, which is why we need your help!"
+        p2: "You might ask, why can't we scientists just do the comparisons ourselves?  The answer is that there is far too much data for a small group of people to compare on their own."
+        p3: "Also, because the definition of complexity is somewhat ambiguous, multiple comparisons of the same pairs of images are required by different people to produce reliable results."
+        p4: "In the long term, we expect to develop a machine learning algorithm that will be able to determine the complexity of sunspot groups without the aid of humans."
+        p5: "Sunspotter volunteers like you will give us a dataset which will train the machine learning algorithm to do this."
+        p6: "In the end, the volunteers will be the ones to thank for putting in the hard work and improving humanity's ability to classify sunspots automatically!"
   
   educationPage:
     classroomActivities:
