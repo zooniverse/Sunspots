@@ -136,6 +136,24 @@ module.exports =
         p4: "In the long term, we expect to develop a machine learning algorithm that will be able to determine the complexity of sunspot groups without the aid of humans."
         p5: "Sunspotter volunteers like you will give us a dataset which will train the machine learning algorithm to do this."
         p6: "In the end, the volunteers will be the ones to thank for putting in the hard work and improving humanity's ability to classify sunspots automatically!"
+    
+    data:
+      title: "About the data"
+      
+      mdi:
+        p1: "The data we are using for this stage of Sunspotter is from the Michelson Doppler Imager (MDI) instrument, which is aboard the Solar and Heliospheric Observatory (SOHO)."
+        p2: "SOHO orbits the Sun between the Sun and Earth at the first Lagrange point (L1) allowing uninterrupted views of the Sun without the Earth or Moon getting in the way."
+        p3: "The MDI instrument was turned off in 2011, but successfully took data for 16 years. Around 60,000 magnetic images of the Sun’s surface were beamed to Earth over this time."
+        p4: "They have allowed the study of the magnetic properties of sunspots and the Sun as a whole over more than an entire 11-year solar cycle."
+        p5: "In this project we take advantage of these features to study the magnetic complexity of sunspot groups over a long timescale and with regards to eruptive activity."
+      
+      mdiCaption:
+        credit1: "Images Courtesy of SOHO/MDI consortium"
+        credit2: "SOHO is a project of international cooperation between ESA and NASA"
+      
+      cutouts:
+        p1: "The current dataset used in Sunspotter includes cut-out images that are based on the locations of sunspot groups determined by hand by the National Oceanic and Atmospheric Agency and the US Air Force."
+        p2: "Analysis of the current dataset will allow us to determine the relationship between sunspot group magnetic complexity and other magnetic properties, such as magnetic area; flux; polarity imbalance; and the length of the polarity separation line - separating positive and negative regions of a given sunspot group image."
   
   educationPage:
     classroomActivities:
