@@ -22,6 +22,10 @@ module.exports =
     explanationPrompt: "What do we mean by complex?"
     invert: "Invert"
     chooseSubject: "Choose"
+    explanation:
+      description: "When comparing two sunspot groups, complexity may be determined by size, shape, and combinations of white and black colors. Trust your gut, it's probably right. Lots of people are looking at each image set, so just take your best guess."
+      examplePrompt: "Here are a few examples..."
+      moreComplex: "More Complex"
   
   sciencePage:
     text: ""
@@ -89,8 +93,3 @@ module.exports =
     total: "Images"
     pass: "Pass"
     users: "Volunteers"
-  
-  explanation:
-    part1: "Complexity may be determined by size, shape, combinations of white and black colors, etc."
-    part2: "We're working on a better explanation, but we really just want you to use your intuitive definition of complexity."
-    part3: "In other words, if one looks more complicated choose it."

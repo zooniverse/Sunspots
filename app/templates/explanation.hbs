@@ -1,0 +1,24 @@
+<button type="button" name="close-dialog">&times;</button>
+<div class="explanation">
+  {{translate 'p' 'classifyPage.explanation.description'}}
+  {{translate 'p' 'classifyPage.explanation.examplePrompt'}}
+  
+  <div class="examples">
+    {{#each example in view.examples}}
+      <div class="example">
+        <div class="left">
+          <img {{bind-attr src="example.left.image"}}>
+          {{#if example.left.complex}}
+            {{translate 'div' 'classifyPage.explanation.moreComplex'}}
+          {{/if}}
+        </div>
+        <div class="right">
+          <img {{bind-attr src="example.right.image"}}>
+          {{#if example.right.complex}}
+            {{translate 'div' 'classifyPage.explanation.moreComplex'}}
+          {{/if}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

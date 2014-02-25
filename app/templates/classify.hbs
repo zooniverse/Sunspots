@@ -3,6 +3,9 @@
     {{translate 'h1' 'classifyPage.question'}}
     <h3 {{action "explain" bubbles="false"}}>
       {{translate 'classifyPage.explanationPrompt'}}
+      <div class="explanation-content hidden">
+        {{render 'explanation'}}
+      </div>
     </h3>
     
     <div class="row">

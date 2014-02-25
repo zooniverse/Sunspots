@@ -1,6 +1,7 @@
 require './application'
 require './classify'
 require './education'
+require './explanation'
 require './index'
 require './login'
 require './profile'

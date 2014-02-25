@@ -14,15 +14,9 @@ module.exports = App.ClassifyController = Ember.ObjectController.extend
   ).property('application.model')
   
   explanationDialog: ->
-    html = """
-      <button type="button" name="close-dialog">&times;</button>
-      <div class="explanation">
-        #{ translate 'p', 'explanation.part1' }
-        #{ translate 'p', 'explanation.part2' }
-        #{ translate 'p', 'explanation.part3' }
-      </div>
-    """
-    dialog = new zooniverse.controllers.Dialog content: $(html)
+    dialog = new zooniverse.controllers.Dialog content: $('.explanation-content').html()
+    dialog.el.find('.dialog').addClass 'explanation-dialog'
+    dialog
   
   actions:
     explain: ->
