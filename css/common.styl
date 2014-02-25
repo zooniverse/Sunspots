@@ -18,6 +18,19 @@ rule-above()
     bottom: 100%
     width: 100%
 
+rule-below()
+  position: relative
+  
+  &:after
+    border-bottom: 1px solid rgba($white, 0.20)
+    border-top: 1px solid rgba($black, 0.20)
+    content: ""
+    height: 0
+    left: 0
+    position: absolute
+    top: 100%
+    width: 100%
+
 circle()
   border-radius: 22px
   width: 44px

@@ -28,6 +28,13 @@ module.exports =
       moreComplex: "More Complex"
   
   sciencePage:
+    navigation:
+      sunspots: "Sunspots"
+      complexity: "Complexity"
+      why: "Why study sunspots?"
+      goals: "Why we need you"
+      data: "About the data"
+    
     sunspots:
       title: "What is a sunspot?"
       

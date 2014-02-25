@@ -107,3 +107,29 @@ nav
     right: 4px
     top: 0
     width: 1em
+
+.science, .education
+  h1
+    titled()
+  
+  section
+    @extend .col-md-10
+    @extend .col-sm-12
+    @extend .col-xs-12
+    @extend .col-md-offset-1
+    
+    padding: 0 10px
+    margin-bottom: 40px
+    
+    .row
+      margin: 0 0 20px 0
+      font-size: 14px
+      text-align: center
+      @media $media-min-desktop
+        text-align: left
+      
+      ul
+        list-style: circle outside none
+        
+        li
+          margin-bottom: 10px
