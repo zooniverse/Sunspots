@@ -68,6 +68,31 @@ module.exports =
         text: "Sunspot magnetic fields reach into the solar corona, shown by hot plasma which follows the magnetic field lines"
         credit1: "These field lines are similar to those from a magnet with a North and South magnetic pole"
         credit2: "Image courtesy of Windows to the Universe"
+    
+    complexity:
+      title: "What is sunspot complexity?"
+      
+      intro:
+        p1: "Sunspot groups range broadly in complexity."
+        p2: "Experts at observatories around the world sort images of sunspot groups into several classes, ranging from Alpha to Gamma."
+      
+      complexityCaption:
+        text1: """
+          From left to right, The most simple class is alpha: one polarity (e.g., "north/south", or "positive/negative", or in these images "black/white") of magnetic field
+          """
+        text2: "Beta is slightly more complex: two polarities, or bipolar"
+        text3: "A classification of gamma is more complex and indicates that the polarities are mixed together"
+        credit: "Data courtesy of the SDO/HMI and SDO/AIA consortia."
+      
+      ranking:
+        p1: "There are other variations of these basic classifications that are part of the Hale or Mt. Wilson classification scheme."
+        p2: "The drawback to using this scheme for indicating complexity is that there are only a few broad groups."
+        p3: "This project requires a continuous measure of complexity like a scale from 1-100, with arbitrary precision; basically a meter stick for sunspot group complexity."
+      
+      rankingResults:
+        p1: "The main thing to keep in mind is that we are not asking you which sunspot group is the largest, or strongest, or which one is likely to erupt; we just want to know which one is more complex!"
+        p2: "If we successfully get a reliable, ranked list of sunspot groups from least to most complex, we will be able to write a great research paper, based on a totally new data set!"
+        p3: "This will be thanks to your help, since this project is only possible through data analysis by human brain power."
   
   educationPage:
     classroomActivities:
