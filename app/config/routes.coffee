@@ -1,7 +1,12 @@
 App.Router.map ->
   @route 'login'
   @resource 'classify'
-  @resource 'science'
+  @resource 'science', ->
+    @route 'sunspots'
+    @route 'complexity'
+    @route 'why'
+    @route 'goals'
+    @route 'data'
   @resource 'education'
   @resource 'team'
   @resource 'discuss'
