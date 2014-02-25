@@ -53,8 +53,7 @@ module.exports =
       
       structure:
         p1: "Individual sunspots are composed of at least one dark central umbra, surrounded by a brighter penumbra, which are characterised by a filamentary structure."
-        p2: "Umbral magnetic fields are mostly vertical, emanating outward from the solar surface."
-        p3: "Penumbral magnetic fields, on the other hand are stretched and travel more horizontally outward across the solar surface before turning upward, away from the surface."
+        p2: "Umbral magnetic fields are mostly vertical, emanating outward from the solar surface.  Penumbral magnetic fields, on the other hand are stretched and travel more horizontally outward across the solar surface before turning upward, away from the surface."
       
       structureCaption:
         text: "Image of a sunspot including its umbra and penumbra"
@@ -79,9 +78,7 @@ module.exports =
     complexity:
       title: "What is sunspot complexity?"
       
-      intro:
-        p1: "Sunspot groups range broadly in complexity."
-        p2: "Experts at observatories around the world sort images of sunspot groups into several classes, ranging from Alpha to Gamma."
+      intro: "Sunspot groups range broadly in complexity.  Experts at observatories around the world sort images of sunspot groups into several classes, ranging from Alpha to Gamma."
       
       complexityCaption:
         text1: """
@@ -91,15 +88,9 @@ module.exports =
         text3: "A classification of gamma is more complex and indicates that the polarities are mixed together"
         credit: "Data courtesy of the SDO/HMI and SDO/AIA consortia."
       
-      ranking:
-        p1: "There are other variations of these basic classifications that are part of the Hale or Mt. Wilson classification scheme."
-        p2: "The drawback to using this scheme for indicating complexity is that there are only a few broad groups."
-        p3: "This project requires a continuous measure of complexity like a scale from 1-100, with arbitrary precision; basically a meter stick for sunspot group complexity."
+      ranking: "There are other variations of these basic classifications that are part of the Hale or Mt. Wilson classification scheme.  The drawback to using this scheme for indicating complexity is that there are only a few broad groups.  This project requires a continuous measure of complexity like a scale from 1-100, with arbitrary precision; basically a meter stick for sunspot group complexity."
       
-      rankingResults:
-        p1: "The main thing to keep in mind is that we are not asking you which sunspot group is the largest, or strongest, or which one is likely to erupt; we just want to know which one is more complex!"
-        p2: "If we successfully get a reliable, ranked list of sunspot groups from least to most complex, we will be able to write a great research paper, based on a totally new data set!"
-        p3: "This will be thanks to your help, since this project is only possible through data analysis by human brain power."
+      rankingResults: "The main thing to keep in mind is that we are not asking you which sunspot group is the largest, or strongest, or which one is likely to erupt; we just want to know which one is more complex!  If we successfully get a reliable, ranked list of sunspot groups from least to most complex, we will be able to write a great research paper, based on a totally new data set!  This will be thanks to your help, since this project is only possible through data analysis by human brain power."
     
     why:
       title: "Why study sunspots?"
@@ -126,33 +117,23 @@ module.exports =
       title: "Science goals and why we need you"
       
       motivation:
-        p1: "At the beginning any research project we must ask: What is the science goal?  The long term goal of our research is two-fold."
-        p2: "In Sunspotter we aim to construct a reliable measure of sunspot group complexity."
-        p3: "This means we want to be able to take a picture of a sunspot group and say, from 1 to 10, how complex is this sunspot group?"
-        p4: "This will help with some of solar physics' unanswered questions including"
+        p1: "At the beginning any research project we must ask: What is the science goal?  The long term goal of our research is two-fold.  In Sunspotter we aim to construct a reliable measure of sunspot group complexity.  This means we want to be able to take a picture of a sunspot group and say, from 1 to 10, how complex is this sunspot group?"
+        p2: "This will help with some of solar physics' unanswered questions including"
         list1: "Are sunspots born complex or do they evolve to become complex?"
         list2: "Do sunspot groups that are more complex produce more eruptions?"
-        p5: "Additionally, we seek to achieve a better physical understanding of how sunspot groups produce eruptions as well as to improve the accuracy of making predictions of solar eruptions."
-        p6: "Like weather forecasting on Earth, we currently can not predict eruptions with any accuracy."
-        p7: "This will expand human knowledge about the Sun and allow us to more effectively protect humans in (and near) outer space."
+        p3: "Additionally, we seek to achieve a better physical understanding of how sunspot groups produce eruptions as well as to improve the accuracy of making predictions of solar eruptions.  Like weather forecasting on Earth, we currently can not predict eruptions with any accuracy.  This will expand human knowledge about the Sun and allow us to more effectively protect humans in (and near) outer space."
       
       volunteers:
         p1: "So far, automated methods have not been able to reliably determine the complexity of sunspot groups, which is why we need your help!"
-        p2: "You might ask, why can't we scientists just do the comparisons ourselves?  The answer is that there is far too much data for a small group of people to compare on their own."
-        p3: "Also, because the definition of complexity is somewhat ambiguous, multiple comparisons of the same pairs of images are required by different people to produce reliable results."
-        p4: "In the long term, we expect to develop a machine learning algorithm that will be able to determine the complexity of sunspot groups without the aid of humans."
-        p5: "Sunspotter volunteers like you will give us a dataset which will train the machine learning algorithm to do this."
-        p6: "In the end, the volunteers will be the ones to thank for putting in the hard work and improving humanity's ability to classify sunspots automatically!"
+        p2: "You might ask, why can't we scientists just do the comparisons ourselves?  The answer is that there is far too much data for a small group of people to compare on their own.  Also, because the definition of complexity is somewhat ambiguous, multiple comparisons of the same pairs of images are required by different people to produce reliable results."
+        p3: "In the long term, we expect to develop a machine learning algorithm that will be able to determine the complexity of sunspot groups without the aid of humans.  Sunspotter volunteers like you will give us a dataset which will train the machine learning algorithm to do this.  In the end, the volunteers will be the ones to thank for putting in the hard work and improving humanity's ability to classify sunspots automatically!"
     
     data:
       title: "About the data"
       
       mdi:
-        p1: "The data we are using for this stage of Sunspotter is from the Michelson Doppler Imager (MDI) instrument, which is aboard the Solar and Heliospheric Observatory (SOHO)."
-        p2: "SOHO orbits the Sun between the Sun and Earth at the first Lagrange point (L1) allowing uninterrupted views of the Sun without the Earth or Moon getting in the way."
-        p3: "The MDI instrument was turned off in 2011, but successfully took data for 16 years. Around 60,000 magnetic images of the Sun’s surface were beamed to Earth over this time."
-        p4: "They have allowed the study of the magnetic properties of sunspots and the Sun as a whole over more than an entire 11-year solar cycle."
-        p5: "In this project we take advantage of these features to study the magnetic complexity of sunspot groups over a long timescale and with regards to eruptive activity."
+        p1: "The data we are using for this stage of Sunspotter is from the Michelson Doppler Imager (MDI) instrument, which is aboard the Solar and Heliospheric Observatory (SOHO).  SOHO orbits the Sun between the Sun and Earth at the first Lagrange point (L1) allowing uninterrupted views of the Sun without the Earth or Moon getting in the way.  The MDI instrument was turned off in 2011, but successfully took data for 16 years. Around 60,000 magnetic images of the Sun’s surface were beamed to Earth over this time."
+        p2: "They have allowed the study of the magnetic properties of sunspots and the Sun as a whole over more than an entire 11-year solar cycle.  In this project we take advantage of these features to study the magnetic complexity of sunspot groups over a long timescale and with regards to eruptive activity."
       
       mdiCaption:
         credit1: "Images Courtesy of SOHO/MDI consortium"

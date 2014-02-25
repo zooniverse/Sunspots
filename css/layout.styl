@@ -22,6 +22,10 @@ a:link, a:active, a:visited
   color: $white
   cursor: pointer
 
+p
+  margin-top: 0
+  line-height: 22px
+
 .background-wrapper
   position: absolute
   z-index: -2
@@ -127,6 +131,12 @@ nav
       text-align: center
       @media $media-min-desktop
         text-align: left
+      
+      p
+        &.right
+          text-align: center
+          @media $media-min-desktop
+            text-align: right
       
       ul
         list-style: circle outside none
