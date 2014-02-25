@@ -93,6 +93,27 @@ module.exports =
         p1: "The main thing to keep in mind is that we are not asking you which sunspot group is the largest, or strongest, or which one is likely to erupt; we just want to know which one is more complex!"
         p2: "If we successfully get a reliable, ranked list of sunspot groups from least to most complex, we will be able to write a great research paper, based on a totally new data set!"
         p3: "This will be thanks to your help, since this project is only possible through data analysis by human brain power."
+    
+    why:
+      title: "Why study sunspots?"
+      
+      affect:
+        p1: "Despite being 150 million km (93 million miles) away, the Sun's activity affects us."
+        p2: "Eruptions from sunspot groups can bathe the Earth in X-Rays and high-energy particles, endangering astronauts and the International Space Station; interrupting GPS signals; damaging our satellite infrastructure; exposing high-altitude and high-latitude aircraft to radiation; and even causing disruptions of the electrical grid."
+      
+      diagramCaption:
+        credit: "Image courtesy of NASA"
+      
+      aurora:
+        p1: "Eruptions from sunspot groups, including solar flares and coronal mass ejection interact with the Earth's magnetic field causing energetic particles to enter the upper atmosphere."
+        p2: "Intense X-ray radiation from solar flares can cause the ionosphere of Earth to inflate, affecting radio communications and inducing drag on satellites."
+        p3: "While causing some risks this process also results some spectacular shows in the Aurora Borealis and Aurora Australis (aka the Northern and Southern Lights)."
+      
+      auroraCaption:
+        credit: "Image Courtesy of United States Air Force photo by Senior Airman Joshua Strang"
+      
+      auroraEarthCaption:
+        credit: "Image Courtesy of NASA"
   
   educationPage:
     classroomActivities:
