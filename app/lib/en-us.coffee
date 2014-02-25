@@ -28,7 +28,46 @@ module.exports =
       moreComplex: "More Complex"
   
   sciencePage:
-    text: ""
+    sunspots:
+      title: "What is a sunspot?"
+      
+      intro:
+        p1: "Sunspots are the most obvious manifestation of the Sun as a magnetic dynamo."
+        p2: "They are the locations where strong bundles of magnetic fields cross the surface of the Sun from the solar interior to the solar atmosphere or vice versa.  This surface is called the photosphere."
+        p3: "The photosphere appears like the surface of a boiling pot.  As hot gas from below bubbles up to the surface, sunspots appear as dark spots when viewed in visible light because they are cooler than their surroundings.  This is because their strong magnetic fields prevent the boiling gas from replenishing the heat that is radiated away from the sunspot."
+        p4: "Sunspots usually appear as bipolar, groups of two or more sunspots, with magnetic fields passing out of the Sun through one portion of the group and back into the other portion."
+      
+      sizeCaption:
+        text: "Sunspots vary in size and tend to range between 1.500 - 50,000 km, making some larger than Earth"
+        credit1: "Observed with the Swedish 1-m Solar Telescope (SST)"
+        credit2: "The SST is operated on the island of La Palma by the Institute for Solar Physics in the Spanish Observatorio del Roque de los Muchachos of the Instituto de Astrofísica de Canarias"
+        credit3: "Observations: Göran Scharmer and Kai Langhans, ISP"
+        credit4: "Image processing: Mats Löfdahl, ISP"
+      
+      structure:
+        p1: "Individual sunspots are composed of at least one dark central umbra, surrounded by a brighter penumbra, which are characterised by a filamentary structure."
+        p2: "Umbral magnetic fields are mostly vertical, emanating outward from the solar surface."
+        p3: "Penumbral magnetic fields, on the other hand are stretched and travel more horizontally outward across the solar surface before turning upward, away from the surface."
+      
+      structureCaption:
+        text: "Image of a sunspot including its umbra and penumbra"
+        credit1: "Image courtesy of SOHO/MDI consortium"
+        credit2: "SOHO is a project of international cooperation between ESA and NASA"
+      
+      magnetic:
+        p1: "The Sun generates these magnetic structures that cause a spectrum of effects that we observe on Earth as space weather."
+        p2: "Sunspots are just the tip of the iceberg to an incredibly complex magnetic field generator"
+      
+      fieldCaption:
+        text: "In this 3D model of a sunspot's magnetic field structure the field lines are represented in brown"
+        credit1: "The field lines in the center (umbra) of a sunspot are vertical to the solar surface and those in the outer umbra are more horizontal"
+        credit2: "John H. Thomas, Nigel O. Weiss, Steven M. Tobias and Nicholas H. Brummell"
+        credit3: "Nature 420, 390-393 (28 November 2002) doi:10.1038/nature01174"
+      
+      magnetCaption:
+        text: "Sunspot magnetic fields reach into the solar corona, shown by hot plasma which follows the magnetic field lines"
+        credit1: "These field lines are similar to those from a magnet with a North and South magnetic pole"
+        credit2: "Image courtesy of Windows to the Universe"
   
   educationPage:
     classroomActivities:
