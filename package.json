@@ -7,7 +7,7 @@
     "start": "haw serve",
     "stage": "haw build && publisssh build www.sunspotter.org/beta && rm -rf build",
     "pre-launch": "haw build && publisssh build www.sunspotter.org/pre-launch && rm -rf build",
-    "stage-locale": "seed-translation --project sunspot --env staging"
+    "seed-locale": "seed-translation --project sunspot --env production"
   },
   "dependencies": {
     "haw": "~0.2.17",
