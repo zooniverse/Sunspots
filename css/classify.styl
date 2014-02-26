@@ -48,25 +48,14 @@
     .subject
       @extend .col-md-5
       @extend .col-sm-5
-      @extend .col-xs-12
+      @extend .col-xs-6
       
       &.first
         @extend .col-md-offset-1
         @extend .col-sm-offset-1
       
-      .image-container
-        @media $media-max-phone
-          display: inline-block
-          margin: 2% 0
-        
-        img
-          framed(8px)
-          
-          @media $media-max-phone
-            display: inline-block
-            max-height: 35vh
-            max-width: 90vw
-            width: auto
+      .image-container img
+        framed(8px)
   
   .recent.subjects
     @extend .col-md-10
