@@ -1,4 +1,4 @@
-PROJECT_NAME = 'Sunspotters'
+PROJECT_NAME = 'Sunspotter'
 
 module.exports =
   home:
@@ -198,7 +198,7 @@ module.exports =
   
   teamPage:
     science:
-      header: "The Sunspotters Team"
+      header: "The Sunspotter Team"
       tagline: "The scientists behind the science"
       bios:
         higgins: "Paul has stoked his passion for expanding the interface between research and public outreach; first, as a developer of UniverseAdventure.org, then by working on SolarMontitor.org, and now by leading the SunSpotters science team."
