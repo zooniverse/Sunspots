@@ -25,25 +25,40 @@
       .nav-link
         margin-right: 5px
   
-  .content.row
-    .captioned-image
-      &.left
-        float: left
-        clear: left
-        margin: 0 15px 15px 0
+  .table-row .table-cell
+    margin-bottom: 20px
+    padding: 0 15px
+  
+  @media $media-min-desktop
+    .table-row
+      display: table-row
       
-      &.right
-        float: right
-        clear: right
-        margin: 0 0 15px 15px
+      .table-cell
+        display: table-cell
+        vertical-align: middle
+        margin-bottom: 0
+        padding: 0 15px
+  
+  .captioned-image
+    text-align: center
+    
+    img
+      border: 4px solid $white
+      border-radius: 2px
+      box-shadow: -2px 2px 3px 0 rgba($black, 0.5)
+    
+    .caption
+      font-style: italic
+      padding: 0 20px
       
-      display: block
-      margin: 15px
-      text-align: center
+      p
+        margin: 2px 0
       
-      img
-        border: 5px solid rgba($white, 0.8)
-        box-shadow: -2px 2px 3px 0 rgba($black, 0.5)
-      
-      .caption
-        display: none
+      .text p
+        font-size: 12px
+        line-height: 13px
+        font-weight: bold
+        
+      .credit p
+        font-size: 8px
+        line-height: 9px
