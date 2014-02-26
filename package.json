@@ -6,6 +6,7 @@
   "scripts": {
     "start": "haw serve",
     "stage": "haw build && publisssh build www.sunspotter.org/beta && rm -rf build",
+    "pre-launch": "haw build && publisssh build www.sunspotter.org/pre-launch && rm -rf build",
     "stage-locale": "seed-translation --project sunspot --env staging"
   },
   "dependencies": {
