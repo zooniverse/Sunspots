@@ -8,3 +8,6 @@ require './controllers/all'
 require './views/all'
 require './templates/all'
 require './components/all'
+
+$(document).on 'click', '.menu-handle', -> $(this).closest('nav').toggleClass('open')
+$(document).on 'click', 'nav .nav-link', -> $(this).closest('nav').removeClass('open')

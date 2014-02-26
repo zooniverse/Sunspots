@@ -1,7 +1,8 @@
 nav
+  position: relative
   line-height: 30px
   padding: 10px 20px
-  margin: 0 40px 20px 40px
+  margin: 0 2% 20px 2%
   border-radius: 6px
   box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.05)
   background-color: rgba(0, 0, 0, 0.10)
@@ -12,6 +13,43 @@ nav
     border-radius: 0
     box-shadow: 0 0 0 0 transparent
     background-color: transparent
+  
+  @media $media-max-phone
+    .nav-link:not(.active)
+      display: none
+    
+    &.open
+      .menu-handle
+        background-color: $red
+      
+      .nav-link
+        display: block
+  
+  .menu-handle
+    transitioned(500ms)
+    center-block()
+    vendor('transition-timing-function', ease-out)
+    position: absolute
+    top: 55px
+    left: 15px
+    width: 40px
+    height: 40px
+    cursor: pointer
+    background-color: rgba($red, 0)
+    color: $white
+    border-radius: 20px
+    
+    .icon
+      position: absolute
+      left: 9px
+      font-size: 22px
+      line-height: 40px
+      cursor: pointer
+  
+  .row
+    @media $media-max-phone
+      padding-top: 5px
+      padding-left: 45px
   
   .logo
     @extend .col-md-3
@@ -81,6 +119,12 @@ nav
   margin-top: 0
   margin-bottom: 20px
   padding-bottom: 10px
+  
+  .menu-handle
+    top: 15px
+  
+  .row
+    margin-bottom: 0
   
   @media $media-min-tablet
     rule-below()
