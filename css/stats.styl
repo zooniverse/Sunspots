@@ -8,8 +8,11 @@
   .stat
     @extend .col-md-3
     @extend .col-sm-6
-    @extend .col-xs-12
+    @extend .col-xs-6
     padding: 30px 20px
+    
+    @media $media-max-phone
+      padding: 10px 5px
     
     .label
       title-font()
@@ -18,8 +21,15 @@
       font-weight: bold
       text-transform: uppercase
       letter-spacing: 4px
+      
+      @media $media-max-phone
+        letter-spacing: 1px
     
     .value
       condensed-font()
       font-size: 48px
       letter-spacing: 3px
+      
+      @media $media-max-phone
+        font-size: 16px
+        letter-spacing: 1px
