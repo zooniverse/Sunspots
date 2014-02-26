@@ -12,9 +12,9 @@ Settings =
     analytics: { }
   
   production:
-    apiHost: 'https://dev.zooniverse.org'
-    classifyUrl: 'http://zooniverse-demo.s3-website-us-east-1.amazonaws.com/sunspots/#/classify'
-    talkHost: 'http://zooniverse-demo.s3-website-us-east-1.amazonaws.com/sunspots_talk'
+    apiHost: 'https://api.zooniverse.org'
+    classifyUrl: 'http://www.sunspotter.org/pre-launch/#/classify'
+    talkHost: 'http://talk.sunspotter.org'
     analytics: { }
 
 env = if window.location.port is '9295'
