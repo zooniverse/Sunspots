@@ -1,5 +1,6 @@
 .science
-  position: relative
+  .title.row
+    margin-bottom: 15px
   
   nav
     rule-below()
@@ -35,12 +36,15 @@
       
       .table-cell
         display: table-cell
-        vertical-align: middle
+        vertical-align: top
         margin-bottom: 0
         padding: 0 15px
   
   .captioned-image
     text-align: center
+    
+    @media $media-min-desktop
+      max-width: 50vw
     
     img
       border: 4px solid $white
@@ -51,14 +55,18 @@
       font-style: italic
       padding: 0 20px
       
+      text-align: center
+      @media $media-min-desktop
+        text-align: left
+      
       p
         margin: 2px 0
       
       .text p
         font-size: 12px
-        line-height: 13px
+        line-height: 14px
         font-weight: bold
         
       .credit p
-        font-size: 8px
-        line-height: 9px
+        font-size: 12px
+        line-height: 14px
