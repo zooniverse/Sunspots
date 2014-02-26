@@ -5,7 +5,7 @@ module.exports = App.Subject = Ember.Object.extend
     @set 'invertedImage', @get('location').inverted
     @set 'talkUrl', "#{ talkHost }/#/subjects/#{ @get 'zooniverse_id' }"
     @set 'socialTitle', 'Zooniverse classification'
-    @set 'socialMessage', 'Classifying on the Zooniverse!'
+    @set 'socialMessage', 'Classifying on Sunspotter!'
     @preloadImages()
   
   image: (->
@@ -46,24 +46,27 @@ module.exports = App.Subject = Ember.Object.extend
       img = new Image
       img.src = url
   
-  facebookUrl: ->
+  facebookUrl: (->
     """
       https://www.facebook.com/sharer/sharer.php
       ?s=100
-      &p[url]={ encodeURIComponent @get 'talkUrl' }
-      &p[title]={ encodeURIComponent @get 'socialTitle' }
-      &p[summary]={ encodeURIComponent @get 'socialMessage' }
-      &p[images][0]={ @get 'socialMessage' }
+      &p[url]=#{ encodeURIComponent @get 'talkUrl' }
+      &p[title]=#{ encodeURIComponent @get 'socialTitle' }
+      &p[summary]=#{ encodeURIComponent @get 'socialMessage' }
+      &p[images][0]=#{ @get 'socialMessage' }
     """.replace '\n', '', 'g'
+  ).property('talkUrl', 'socialTitle', 'socialMessage')
   
-  twitterUrl: ->
-    status = "{ @get 'socialMessage' } { @get 'talkUrl' }"
-    "http://twitter.com/home?status={ encodeURIComponent status }"
+  twitterUrl: (->
+    status = "#{ @get 'socialMessage' } #{ @get 'talkUrl' }"
+    "http://twitter.com/home?status=#{ encodeURIComponent status }"
+  ).property('socialMessage', 'talkUrl')
   
-  pinterestUrl: ->
+  pinterestUrl: (->
     """
       http://pinterest.com/pin/create/button/
-      ?url={ encodeURIComponent @get 'talkUrl' }
-      &media={ encodeURIComponent @get 'image' }
-      &description={ encodeURIComponent @get 'socialMessage' }
+      ?url=#{ encodeURIComponent @get 'talkUrl' }
+      &media=#{ encodeURIComponent @get 'image' }
+      &description=#{ encodeURIComponent @get 'socialMessage' }
     """.replace '\n', '', 'g'
+  ).property('talkUrl', 'image', 'socialMessage')

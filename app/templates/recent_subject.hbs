@@ -12,9 +12,9 @@
     </div>
     
     <div class="right actions">
-      <div {{bind-attr class=":action isFavorited:favorited"}} data-icon="star" {{action "toggleFavorite" bubbles="true"}}></div>
-      <div class="action" data-icon="comment"></div>
-      <div class="action" data-icon="twitter"></div>
+      <div {{bind-attr class=":action isFavorited:favorited"}} data-icon="star" {{action "toggleFavorite"}}></div>
+      <div class="action" data-icon="comment" {{action "goToTalk"}}></div>
+      <div class="action" data-icon="twitter" {{action "tweet"}}></div>
     </div>
   </div>
 </div>

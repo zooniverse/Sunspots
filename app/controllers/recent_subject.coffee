@@ -13,3 +13,9 @@ module.exports = App.RecentSubjectController = Ember.ObjectController.extend
         zooniverse.api.post('/projects/sunspot/favorites', params).then (favorite) =>
           @set 'model.favorited', true
           @set 'model.favorite_id', favorite.id
+    
+    goToTalk: ->
+      window.location = @get 'model.talkUrl'
+    
+    tweet: ->
+      window.location = @get 'model.twitterUrl'
