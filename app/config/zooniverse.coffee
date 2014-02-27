@@ -27,6 +27,10 @@ zooniverse.topBar = new TopBar
 zooniverse.topBar.el.appendTo $('#header')
 zooniverse.footer = new Footer
 zooniverse.footer.el.appendTo $('#footer')
+
+browserDialog = require 'zooniverse/controllers/browser-dialog'
+browserDialog.check msie: 9
+
 zooniverse.util = $.extend zooniverse.util, require '../lib/util'
 zooniverse.SubjectQueue = require '../lib/subject_queue'
 User.fetch()
