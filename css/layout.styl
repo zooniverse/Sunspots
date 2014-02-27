@@ -86,7 +86,10 @@ nav
       display: none
 
 .zooniverse-dialog .underlay .container
-  .explanation-dialog
+  @media $media-max-phone
+    overflow-y: auto
+  
+  .dialog
     width: 60%
     min-width: 290px
     max-width: 600px
