@@ -27,9 +27,8 @@ nav
         display: block
   
   .menu-handle
-    transitioned(500ms)
     center-block()
-    vendor('transition-timing-function', ease-out)
+    transition: background-color 500ms ease-out, color 500ms ease-out
     position: absolute
     bottom: 12px
     left: 15px
