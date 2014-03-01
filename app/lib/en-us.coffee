@@ -189,7 +189,7 @@ module.exports =
       title: "How can I keep up to date with education and Sunspotter?"
       
       p1: """
-        The <a href="http://blog.sunspotter.org" target="_blank">Sunspotter blog</a> and <a href="https://twitter.com/sun_spotter" target="_blank">@sun_spotter</a> Twitter feed are great places to keep up to date with the latest science results.
+        The <a href="http://blog.sunspotter.org" target="_blank">Sunspotter blog</a> and <a href="https://twitter.com/sunspotter_org" target="_blank">@sunspotter_org</a> Twitter feed are great places to keep up to date with the latest science results.
       """
       
       p2: """
