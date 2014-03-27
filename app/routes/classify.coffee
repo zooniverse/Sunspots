@@ -1,6 +1,9 @@
 Classification = zooniverse.models.Classification
 
 module.exports = App.ClassifyRoute = Ember.Route.extend
+  beforeModel: ->
+    @transitionTo('done') if App.outOfData
+  
   model: ->
     zooniverse.SubjectQueue.fetch()
   

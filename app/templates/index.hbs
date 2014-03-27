@@ -7,15 +7,23 @@
         <img onerror="this.src='images/logo.png'" src="images/logo.svg">
       </h1>
       
-      {{translate 'h3' 'home.tagline'}}
-      
-      {{#link-to 'classify' classNames="button"}}
-        {{translate 'span' 'home.callToAction'}}
-      {{/link-to}}
-      
-      {{#link-to 'science' classNames="science-link"}}
-        {{translate 'em' 'home.prompt'}}
-      {{/link-to}}
+      {{#unless App.outOfData}}
+        {{translate 'h3' 'home.tagline'}}
+        
+        {{#link-to 'classify' classNames="button"}}
+          {{translate 'span' 'home.callToAction'}}
+        {{/link-to}}
+        
+        {{#link-to 'science' classNames="science-link"}}
+          {{translate 'em' 'home.prompt'}}
+        {{/link-to}}
+      {{else}}
+        <div class="row">
+          {{translate 'h1' 'donePage.title'}}
+        </div>
+        
+        {{partial 'complete_message'}}
+      {{/unless}}
     </div>
   </div>
   

@@ -1,5 +1,7 @@
 require './application'
 require './classify'
+require './_complete_message'
+require './done'
 require './education'
 require './explanation'
 require './index'

@@ -6,6 +6,7 @@ module.exports = App.ApplicationRoute = Ember.Route.extend
     controller.set 'model', project
   
   activate: ->
+    return if App.outOfData
     reloadModel = =>
       zooniverse.api.get('/projects/sunspot').then (project) =>
         @set 'model', project

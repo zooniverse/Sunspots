@@ -27,6 +27,11 @@ module.exports =
       examplePrompt: "Here are a few examples..."
       moreComplex: "More Complex"
   
+  donePage:
+    title: "With your help, we've classified all the data we have so far"
+    complete: """We're working on analyzing the results and preparing more data, but we have more projects (like <a href="http://www.planktonportal.org">Plankton Portal</a> and <a href="http://radio.galaxyzoo.org">Radio Galaxy Zoo</a>) that need your help. Visit <a href="https://www.zooniverse.org/projects">zooniverse.org</a> to see them all."""
+    moreLinks: """Keep an eye on <a href="http://blog.sunspotter.org">the blog</a> to learn what happens with the data the project has generated and to find out when more data will be available."""
+  
   sciencePage:
     navigation:
       sunspots: "Sunspots"

@@ -34,7 +34,7 @@ browserDialog.check msie: 9
 zooniverse.util = $.extend zooniverse.util, require '../lib/util'
 zooniverse.SubjectQueue = require '../lib/subject_queue'
 User.fetch()
-zooniverse.SubjectQueue.fetch()
+zooniverse.SubjectQueue.fetch() unless App.outOfData
 zooniverse.classificationCount = 0
 GoogleAnalytics = require '../lib/analytics'
 window.zooniverse.GoogleAnalytics = new GoogleAnalytics

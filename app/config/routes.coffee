@@ -1,5 +1,6 @@
 App.Router.map ->
   @route 'login'
+  @route 'done'
   @resource 'classify'
   @resource 'science', ->
     @route 'sunspots'
