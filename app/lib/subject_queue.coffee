@@ -41,7 +41,7 @@ class SubjectQueue
   
   @fetcher: ->
     @adjustQueueSize()
-    zooniverse.api.get '/projects/sunspot/groups/subject_pairs', limit: @toFetch()
+    zooniverse.api.get '/projects/sunspot/subjects', comparison: 'complexity', limit: @toFetch()
   
   @setFetchedCurrent: (result) =>
     @currentFetcher = null
