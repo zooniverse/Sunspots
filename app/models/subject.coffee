@@ -21,7 +21,6 @@ module.exports = App.Subject = Ember.Object.extend
     date = @get('metadata.date').split('T')[0].replace /\-/g, '/'
     [
       { label: 'Image', value: @get('zooniverse_id') }
-      { label: 'Hale', value: @get('metadata.hale') }
       { label: 'Taken At', value: date }
     ]
   ).property('metadata', 'zooniverse_id')
@@ -37,6 +36,10 @@ module.exports = App.Subject = Ember.Object.extend
   isFavorited: (->
     @getWithDefault('favorited', false) or !!@get('favorite_id')
   ).property('favorited', 'favorite_id')
+  
+  isSquare: (->
+    @get('workflow_id') is '53979d96a5ae1361ca000211' or !!@get('metadata.arid')
+  ).property('state', 'metadata')
   
   toggleInverted: ->
     @set 'isInverted', !@getWithDefault('isInverted', false)

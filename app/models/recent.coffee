@@ -10,3 +10,5 @@ module.exports = App.Recent = Ember.Object.extend
     @set 'second', pair.get('second')
     @set 'first.recent_id', @get('id')
     @set 'second.recent_id', @get('id')
+    @set 'first.workflow_id', @get('workflow_id')
+    @set 'second.workflow_id', @get('workflow_id')

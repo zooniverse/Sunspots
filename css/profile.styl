@@ -106,12 +106,17 @@
         cursor: pointer
         
         img
+          display: block
           z-index: 1
           opacity: 1
           width: 100%
           vertical-align: top
           vendor('transition-property', 'opacity')
           vendor('transition-duration', 600ms)
+          
+          &.not-square
+            padding-bottom: 10%
+            margin-top: 10%
       
       .information
         @extend .row
