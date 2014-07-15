@@ -18,6 +18,7 @@ languageManager = new LanguageManager
     en: label: 'English', strings: enUs
     es: label: 'Español', strings: './translations/es.json'
     de: label: 'Deutsch', strings: './translations/de.json'
+    pl: label: 'Polski', strings: './translations/pl.json'
 
 languageManager.on 'change-language', (e, code, strings) ->
   translate.load strings
