@@ -16,6 +16,7 @@ zooniverse.api = new Api project: 'sunspot', host: Settings.apiHost
 languageManager = new LanguageManager
   translations:
     en: label: 'English', strings: enUs
+    zh_tw: label: '繁體中文', strings: './translations/zh-tw.json'
     es: label: 'Español', strings: './translations/es.json'
     de: label: 'Deutsch', strings: './translations/de.json'
     pl: label: 'Polski', strings: './translations/pl.json'
