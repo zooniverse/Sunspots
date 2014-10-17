@@ -13,7 +13,7 @@ module.exports =
     science: "Science"
     education: "Education"
     team: "Team"
-    discuss: "Discuss"
+    discuss: "Talk"
     blog: "Blog"
     profile: "Profile"
   
