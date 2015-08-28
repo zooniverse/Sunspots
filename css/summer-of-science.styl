@@ -1,44 +1,48 @@
-#summer-of-science
-  background: #f64d4c
-  height: 70px
-  position: relative
+header
+  .zooniverse-top-bar
+    top: auto
 
-  .content
-    color: white
+#summer-of-science
+  position: relative
+  background-color: $red
+  max-width: 100%
+  overflow: hidden
+  padding: 10px 0
+  
+  line-height: 12px
+  font-size: 12px
+  
+  @media $media-min-lg-desktop
     line-height: 70px
-    position: relative
+    font-size: 16px
+    padding: 0
+  
+  .content
+    @extend .col-xs-8
+    color: white
     text-align: center
     z-index: 1
-
-    button
-      background: #6fa0db
-      border: 0
-      border-radius: 3px
-      color: white
-      font-weight: 700
-      margin: 0 1em
-      padding: 6px 12px
+    overflow: hidden
 
   .progress
-    background: #c03332
+    transitioned(1s)
+    background: darken(red, 22%)
     height: 100%
     left: 0
     position: absolute
     top: 0
-    transition: all 3s ease-in-out
     width: 0
     z-index: 0
-
+  
   .current, .goal
-    font-size: 2em
-    line-height: 70px
-    position: absolute
-    top: 0
+    condensed-font()
+    @extend .col-xs-2
+    color: white
+    word-wrap: break-word
+    text-align: center
+    line-height: 18px
+    font-size: 18px
 
-  .current
-    color: #f64d4c
-    left: 1em
-
-  .goal
-    color: #c03332
-    right: 1em
+    @media $media-min-lg-desktop
+      line-height: 70px
+      font-size: 32px

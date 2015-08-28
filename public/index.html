@@ -14,32 +14,34 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
-
+  
   <body>
     <div class="background-wrapper">
       <img src="images/sun.jpg" class="sun">
     </div>
     <div id="summer-of-science">
-      <div class="progress" id="summer-of-science-current"></div>
-      <div class="progress-float"></div>
-
-      <div class="content">
-        Help us get <b>250,000 new classifications</b> in the <b>SUNSPOTTER Citizen Science Challenge</b>! August 29-September 5
-        <a href="#/classify"><button type="button">GO</button></a>
+      <div class="row">
+        <div class="progress"></div>
+        <div class="current"></div>
+        <div class="content">
+          Help us get <b>250,000 new classifications</b>
+          <div class="clearfix visible-xs"></div>
+          in the <b>SUNSPOTTER Citizen Science Challenge</b>!
+          <div class="clearfix visible-sm visible-xs"></div>
+          August 29-September 5
+        </div>
+        <div class="goal">250,000</div>
       </div>
-
-      <div class="current">0</div>
-      <div class="goal">250,000</div>
     </div>
     <header id="header"></header>
     <div id="app"></div>
     <footer id="footer" class="container"></footer>
-
+    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.3.1/ember.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="main.js" type="text/javascript" charset="utf-8"></script>
-
+    
     <script type="text/javascript" charset="utf-8">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

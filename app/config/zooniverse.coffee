@@ -40,13 +40,3 @@ zooniverse.SubjectQueue.fetch() unless App.outOfData
 zooniverse.classificationCount = 0
 GoogleAnalytics = require '../lib/analytics'
 window.zooniverse.GoogleAnalytics = new GoogleAnalytics
-
-# Summer of Science 2015
-STARTING_CLASSIFICATIONS = 0
-GOAL = 250 * 1000
-CURRENT = 100 # Get from project
-
-window.addEventListener 'DOMContentLoaded', ->
-  percent = Math.min ((CURRENT - STARTING_CLASSIFICATIONS) / GOAL), 1
-  width = window.innerWidth * percent
-  $('#summer-of-science-current').width width
