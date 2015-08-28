@@ -1,10 +1,10 @@
 <div class="home">
   <div class="row">
     <div class="welcome">
-      {{translate 'h2' 'home.welcome'}}
-      
       <h1>
-        <img onerror="this.src='images/logo.png'" src="images/logo.svg">
+        {{#link-to 'classify'}}
+          <img src="images/challenge.png">
+        {{/link-to}}
       </h1>
       
       {{#unless App.outOfData}}
