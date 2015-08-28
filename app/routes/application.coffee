@@ -7,9 +7,8 @@ module.exports = App.ApplicationRoute = Ember.Route.extend
     @showProgress project.classification_count
   
   showProgress: (count) ->
-    startingAt = 2691352
+    startingAt = 2791401
     goal = 250000
-    count = startingAt + 123456 # remove
     count -= startingAt
     percent = Math.min (count / goal), 1
     $('#summer-of-science .current').html zooniverse.util.formatNumber count
