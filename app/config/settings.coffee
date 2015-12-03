@@ -12,7 +12,8 @@ Settings =
     analytics: { }
   
   production:
-    apiHost: 'https://api.zooniverse.org'
+    apiHost: 'http://www.sunspotter.org'
+    apiPath: '/_ouroboros_api/proxy'
     classifyUrl: 'http://www.sunspotter.org/pre-launch/#/classify'
     talkHost: 'http://talk.sunspotter.org'
     analytics: { }

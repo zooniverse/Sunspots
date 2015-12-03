@@ -11,7 +11,7 @@ LanguageManager = require 'zooniverse/lib/language-manager'
 TopBar = require 'zooniverse/controllers/top-bar'
 Footer = require 'zooniverse/controllers/footer'
 
-zooniverse.api = new Api project: 'sunspot', host: Settings.apiHost
+zooniverse.api = new Api project: 'sunspot', host: Settings.apiHost, path: Settings.apiPath
 
 languageManager = new LanguageManager
   translations:
