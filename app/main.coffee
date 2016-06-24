@@ -1,5 +1,5 @@
 require './config/ember'
-App.outOfData = false
+App.outOfData = true
 
 require './config/zooniverse'
 require './config/routes'
